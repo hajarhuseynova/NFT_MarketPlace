@@ -1,0 +1,279 @@
+.container {
+  width: 1050px;
+  margin: auto;
+}
+.info {
+  width: 100%;
+  background-color: $background;
+  .info_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .info_left {
+      margin-right: 30px;
+      > h1 {
+        @include H1;
+        margin-bottom: 20px;
+        width: 510px;
+        height: 222px;
+      }
+      > p {
+        @include BodyText;
+        margin-bottom: 30px;
+      }
+      > button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 224px;
+        height: 60px;
+        background: $secondary_filled;
+        font-family: "Work Sans";
+        border-radius: 20px;
+        border: 1px solid transparent;
+        color: $white;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+      .ratings {
+        display: flex;
+        margin-top: 30px;
+        .rating {
+          width: 150px;
+          margin-right: 30px;
+          > h4 {
+            @include H4;
+          }
+          > p {
+            @include BodyText;
+            font-size: 23.99px;
+          }
+        }
+      }
+    }
+    .info_right {
+      width: 510px;
+      height: 510px;
+      background: $background-secondary;
+      border-radius: 20px;
+      > img {
+        width: 510px;
+        height: 401px;
+      }
+      .blur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+        width: 510px;
+        height: 109px;
+        > h5 {
+          @include H5;
+        }
+        .blur_words {
+          display: flex;
+          > p {
+            @include BodyText;
+            font-size: 16px;
+            margin-left: 12px;
+          }
+        }
+      }
+    }
+    .info_mobile_media {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 690px;
+  }
+  .info {
+    .info_container {
+      .info_left {
+        > h1 {
+          width: 330px;
+          height: 138px;
+          font-size: 38px;
+          line-height: 46px;
+        }
+        > p {
+          font-size: 16px;
+          line-height: 140%;
+          width: 330px;
+          height: 66px;
+          margin-bottom: 20px;
+        }
+        .ratings {
+          margin-top: 20px;
+          width: 330px;
+          height: 57px;
+          .rating {
+            width: 90px;
+            height: 57px;
+            > h4 {
+              font-size: 22px;
+              line-height: 160%;
+            }
+            > p {
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+      .info_right {
+        width: 330px;
+        height: 330px;
+        > img {
+          width: 330px;
+          height: 221px;
+        }
+        .blur {
+          padding: 20px;
+          gap: 10px;
+          width: 330px;
+          height: 109px;
+          .blur_words {
+            display: flex;
+            > p {
+              line-height: 140%;
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .container {
+    width: 315px;
+  }
+  .info {
+    .info_container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .info_right {
+        display: none;
+      }
+      .info_left {
+        display: none;
+      }
+      .info_mobile_media {
+        display: initial;
+        width: 315px;
+        height: 706px;
+        > h1 {
+          @include H1;
+          font-size: 28px;
+          line-height: 40px;
+          width: 315px;
+          height: 78px;
+          margin-bottom: 10px;
+        }
+        > p {
+          @include BodyText;
+          font-size: 16px;
+          line-height: 140%;
+          width: 315px;
+          height: 66px;
+          margin-bottom: 40px;
+        }
+        .info_picture {
+          width: 315px;
+          height: 315px;
+          background: $background-secondary;
+          border-radius: 20px;
+          > img {
+            width: 315px;
+            height: 206px;
+          }
+          .blur_mobile {
+            width: 315px;
+            height: 109px;
+            > h5 {
+              @include H5;
+              margin-bottom: 10px;
+              padding-top: 20px;
+              padding-left: 20px;
+            }
+            .blur_mobile_words {
+              margin-left: 20px;
+              display: flex;
+              > img {
+                width: 24px;
+                height: 24px;
+              }
+              > p {
+                @include BodyText;
+                font-size: 16px;
+                line-height: 140%;
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+        > button {
+          margin-bottom: 40px;
+          margin-top: 40px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          width: 315px;
+          height: 60px;
+          background: $secondary_filled;
+          font-family: "Work Sans";
+          border-radius: 20px;
+          border: 1px solid transparent;
+          color: $white;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+        .ratings {
+          width: 315px;
+          height: 57px;
+          display: flex;
+
+          .rating {
+            width: 85px;
+            height: 57px;
+            > p {
+              @include BodyText;
+              font-size: 16px;
+              line-height: 140%;
+            }
+            > h4 {
+              @include H4;
+              font-size: 22px;
+              line-height: 160%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
