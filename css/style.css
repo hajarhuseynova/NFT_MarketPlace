@@ -853,8 +853,6 @@ body {
   padding-bottom: 80px;
 }
 .creators .creators_container .left_right {
-  width: 1050px;
-  height: 91px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,4 +1037,207 @@ body {
   line-height: 140%;
   color: #858584;
   margin-right: 10px;
+}
+.creators .creators_container .creator_cards_media {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .creators .creators_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .creators .creators_container .left_right .creators_left {
+    width: 343px;
+    height: 93px;
+  }
+  .creators .creators_container .left_right .creators_left > h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+  }
+  .creators .creators_container .left_right .creators_left > p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .creators .creators_container .left_right .creators_right > button {
+    margin-top: 33px;
+  }
+  .creators .creators_container .hidden {
+    display: none;
+  }
+  .creators .creators_container .creator_cards_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 690px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
+    isolation: isolate;
+    width: 330px;
+    height: 100px;
+    background: #3b3b3b;
+    border-radius: 20px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_left_media .creator_number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+    isolation: isolate;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 12px;
+    top: 13px;
+    background: #2b2b2b;
+    border-radius: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-positive: 0;
+        flex-grow: 0;
+    z-index: 2;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_left_media .creator_number > span {
+    position: absolute;
+    width: 10px;
+    height: 22px;
+    left: calc(50% - 5px);
+    top: calc(50% - 11px);
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #858584;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_left_media > img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 60px;
+    height: 60px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media {
+    width: 210px;
+    height: 58px;
+    margin-left: 20px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > h5 {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > p {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > p > span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-family: "Work Sans";
+    font-size: 16px;
+    line-height: 140%;
+    margin-right: 16px;
+    color: #858584;
+  }
+}
+@media screen and (max-width: 834px) {
+  .creators .creators_container .left_right .creators_left {
+    width: 315px;
+    height: 93px;
+  }
+  .creators .creators_container .left_right .creators_left > p {
+    width: 315px;
+  }
+  .creators .creators_container .left_right .creators_right > button {
+    display: none;
+  }
+  .creators .creators_container .creator_cards_media {
+    gap: 20px;
+    width: 315px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media {
+    gap: 20px;
+    width: 315px;
+    height: 100px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media {
+    margin-left: 0;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > p {
+    width: 195px;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > p > span {
+    margin-right: 5px;
+  }
 }

@@ -403,8 +403,6 @@
     padding-top: 80px;
     padding-bottom: 80px;
     .left_right {
-      width: 1050px;
-      height: 91px;
       display: flex;
       .creators_left {
         width: 703px;
@@ -528,6 +526,170 @@
               line-height: 140%;
               color: $label_text;
               margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+    .creator_cards_media {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .creators {
+    .creators_container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .left_right {
+        .creators_left {
+          width: 343px;
+          height: 93px;
+          > h3 {
+            @include H4;
+            font-weight: 600;
+          }
+          > p {
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+        .creators_right {
+          > button {
+            margin-top: 33px;
+          }
+        }
+      }
+      .hidden {
+        display: none;
+      }
+      .creator_cards_media {
+        display: flex;
+        width: 690px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .creator_card_media {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 20px;
+          isolation: isolate;
+          width: 330px;
+          height: 100px;
+          background: $background-secondary;
+          border-radius: 20px;
+          .creator_card_left_media {
+            .creator_number {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              padding: 0px;
+              isolation: isolate;
+              position: absolute;
+              width: 30px;
+              height: 30px;
+              left: 12px;
+              top: 13px;
+              background: $background;
+              border-radius: 20px;
+              flex: none;
+              order: 2;
+              flex-grow: 0;
+              z-index: 2;
+              > span {
+                position: absolute;
+                width: 10px;
+                height: 22px;
+                left: calc(50% - 10px / 2);
+                top: calc(50% - 22px / 2);
+                font-family: "Space Mono";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: $label_text;
+              }
+            }
+            > img {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              padding: 0px;
+              gap: 10px;
+              width: 60px;
+              height: 60px;
+            }
+          }
+          .creator_card_right_media {
+            width: 210px;
+            height: 58px;
+            margin-left: 20px;
+            > h5 {
+              margin-bottom: 5px;
+              @include H5;
+            }
+            > p {
+              font-family: "Space Mono";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              color: $white;
+              > span {
+                @include BodyText;
+                font-family: "Work Sans";
+                font-size: 16px;
+                line-height: 140%;
+                margin-right: 16px;
+                color: $label_text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .creators {
+    .creators_container {
+      .left_right {
+        .creators_left {
+          width: 315px;
+          height: 93px;
+          > p {
+            width: 315px;
+          }
+        }
+        .creators_right {
+          > button {
+            display: none;
+          }
+        }
+      }
+      .creator_cards_media {
+        gap: 20px;
+        width: 315px;
+        .creator_card_media {
+          gap: 20px;
+          width: 315px;
+          height: 100px;
+          .creator_card_right_media {
+            margin-left: 0;
+            > p {
+              width: 195px;
+              > span {
+                margin-right: 5px;
+              }
             }
           }
         }
