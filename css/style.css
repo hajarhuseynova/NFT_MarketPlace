@@ -1,0 +1,274 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #2b2b2b;
+}
+.navbar .navbar_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+}
+.navbar .navbar_container .navbar_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+}
+.navbar .navbar_container .navbar_left .navbar_logo {
+  width: 32px;
+  height: 32px;
+}
+.navbar .navbar_container .navbar_left .navbar_logo_words {
+  margin-left: 12px;
+  margin-top: 8.6px;
+  margin-bottom: 3.6px;
+  width: 199.41px;
+  height: 19.8px;
+}
+.navbar .navbar_container .navbar_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.navbar .navbar_container .navbar_right > a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+.navbar .navbar_container .navbar_right > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  width: 152px;
+  height: 60px;
+  background: #a259ff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.navbar .navbar_container .navbar_right > button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navbar .navbar_container .navbar_right > img {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .navbar {
+    height: 54px;
+  }
+  .navbar .navbar_container {
+    padding: 15px 50px;
+  }
+  .navbar .navbar_container .navbar_left {
+    height: 24px;
+  }
+  .navbar .navbar_container .navbar_left .navbar_logo {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar .navbar_container .navbar_left .navbar_logo_words {
+    margin-left: 9px;
+    margin-top: 6.45px;
+    margin-bottom: 2.7px;
+    width: 149.56px;
+    height: 14.85px;
+  }
+  .navbar .navbar_container .navbar_right > a {
+    display: none;
+  }
+  .navbar .navbar_container .navbar_right > button {
+    display: none;
+  }
+  .navbar .navbar_container .navbar_right > img {
+    display: initial;
+  }
+}
+@media screen and (max-width: 834px) {
+  .navbar .navbar_container {
+    padding: 15px 30px;
+  }
+}
