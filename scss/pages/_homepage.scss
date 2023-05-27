@@ -692,6 +692,38 @@
           }
         }
       }
+      .mobile_button {
+        display: flex;
+        > button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 50px;
+          gap: 12px;
+          width: 315px;
+          height: 60px;
+          border: 2px solid $secondary_filled;
+          color: $white;
+          background-color: transparent;
+          border-radius: 20px;
+          flex: none;
+          order: 0;
+          flex-grow: 1;
+          cursor: pointer;
+          transition: 0.5s;
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
     }
   }
 }
@@ -796,6 +828,251 @@
         .categories_card {
           width: 147.5px;
           height: 209px;
+        }
+      }
+    }
+  }
+}
+.discover {
+  width: 100%;
+  background-color: $background;
+  .discover_container {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    .left_and_right {
+      display: flex;
+      width: 1050px;
+      height: 91px;
+      .discover_left {
+        width: 763px;
+        height: 91px;
+        > h3 {
+          @include H3;
+          margin-bottom: 10px;
+        }
+        > p {
+          @include BodyText;
+        }
+      }
+      .discover_right {
+        > button {
+          margin-top: 31px;
+          margin-left: 100px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 50px;
+          gap: 12px;
+          width: 187px;
+          height: 60px;
+          border: 2px solid $secondary_filled;
+          border-radius: 20px;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          background-color: transparent;
+          color: $white;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    .discover_cards {
+      gap: 30px;
+      width: 1050px;
+
+      margin-top: 60px;
+      display: flex;
+      .discover_card {
+        width: 330px;
+        height: 469px;
+        background: $background-secondary;
+        border-radius: 20px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        .discover_bottom {
+          margin: 20px 30px;
+          > h5 {
+            @include H5;
+            margin-bottom: 5px;
+          }
+          .discover_footer {
+            display: flex;
+            > img {
+              margin-right: 12px;
+            }
+            > p {
+              @include BodyText;
+              font-size: 16px;
+              line-height: 140%;
+              font-family: "Space Mono";
+            }
+          }
+          .discover_info {
+            display: flex;
+            margin-top: 25px;
+            .left_info {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              padding: 0px 21px 0px 0px;
+              gap: 8px;
+              width: 135px;
+              height: 43px;
+              > p:first-child {
+                @include Caption;
+              }
+              > p:last-child {
+                @include BodyText;
+                font-size: 16px;
+                line-height: 140%;
+                font-family: "Space Mono";
+              }
+            }
+            .right_info {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-end;
+              padding: 0px;
+              gap: 8px;
+              width: 135px;
+              height: 43px;
+              > p:first-child {
+                @include Caption;
+              }
+              > p:last-child {
+                @include BodyText;
+                font-size: 16px;
+                line-height: 140%;
+                font-family: "Space Mono";
+              }
+            }
+          }
+        }
+      }
+    }
+    .mobile_button {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .discover {
+    .discover_container {
+      padding-top: 40px;
+      .left_and_right {
+        width: 690px;
+        height: 71px;
+        .discover_left {
+          > h3 {
+            font-size: 28px;
+            line-height: 140%;
+          }
+          > p {
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+        .discover_right {
+          > button {
+            margin-top: 11px;
+          }
+        }
+      }
+      .discover_cards {
+        width: 690px;
+        .discover_card {
+          width: 330px;
+          height: 469px;
+        }
+        .hiddenCard {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .discover {
+    .discover_container {
+      padding-bottom: 60px;
+      .left_and_right {
+        width: 315px;
+        height: 71px;
+        .discover_left {
+          > h3 {
+            font-size: 28px;
+            line-height: 140%;
+          }
+          > p {
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+        .discover_right {
+          display: none;
+        }
+      }
+      .discover_cards {
+        width: 315px;
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        .discover_card {
+          gap: 30px;
+          width: 315px;
+          height: 402px;
+          .discover_top {
+            > img {
+              width: 315px;
+              height: 238px;
+            }
+          }
+          .discover_bottom {
+            margin: 20px;
+          }
+        }
+        .hiddenCard {
+          display: initial;
+        }
+      }
+      .mobile_button {
+        display: flex;
+        > button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 50px;
+          gap: 12px;
+          width: 315px;
+          height: 60px;
+          border: 2px solid $secondary_filled;
+          color: $white;
+          background-color: transparent;
+          border-radius: 20px;
+          flex: none;
+          order: 0;
+          flex-grow: 1;
+          cursor: pointer;
+          transition: 0.5s;
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
     }

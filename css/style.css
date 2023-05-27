@@ -1240,6 +1240,56 @@ body {
   .creators .creators_container .creator_cards_media .creator_card_media .creator_card_right_media > p > span {
     margin-right: 5px;
   }
+  .creators .creators_container .mobile_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .creators .creators_container .mobile_button > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 50px;
+    gap: 12px;
+    width: 315px;
+    height: 60px;
+    border: 2px solid #a259ff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .creators .creators_container .mobile_button > button:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 .categories {
   width: 100%;
@@ -1372,5 +1422,342 @@ body {
   .categories .categories_container .categories_cards .categories_card {
     width: 147.5px;
     height: 209px;
+  }
+}
+.discover {
+  width: 100%;
+  background-color: #2b2b2b;
+}
+.discover .discover_container {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.discover .discover_container .left_and_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1050px;
+  height: 91px;
+}
+.discover .discover_container .left_and_right .discover_left {
+  width: 763px;
+  height: 91px;
+}
+.discover .discover_container .left_and_right .discover_left > h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.discover .discover_container .left_and_right .discover_left > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.discover .discover_container .left_and_right .discover_right > button {
+  margin-top: 31px;
+  margin-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 50px;
+  gap: 12px;
+  width: 187px;
+  height: 60px;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.discover .discover_container .left_and_right .discover_right > button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.discover .discover_container .discover_cards {
+  gap: 30px;
+  width: 1050px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover .discover_container .discover_cards .discover_card {
+  width: 330px;
+  height: 469px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom {
+  margin: 20px 30px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom > h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_footer > img {
+  margin-right: 12px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_footer > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Space Mono";
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .left_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .left_info > p:first-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .left_info > p:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Space Mono";
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .right_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .right_info > p:first-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+}
+.discover .discover_container .discover_cards .discover_card .discover_bottom .discover_info .right_info > p:last-child {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+  font-family: "Space Mono";
+}
+.discover .discover_container .mobile_button {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .discover .discover_container {
+    padding-top: 40px;
+  }
+  .discover .discover_container .left_and_right {
+    width: 690px;
+    height: 71px;
+  }
+  .discover .discover_container .left_and_right .discover_left > h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .discover .discover_container .left_and_right .discover_left > p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .discover .discover_container .left_and_right .discover_right > button {
+    margin-top: 11px;
+  }
+  .discover .discover_container .discover_cards {
+    width: 690px;
+  }
+  .discover .discover_container .discover_cards .discover_card {
+    width: 330px;
+    height: 469px;
+  }
+  .discover .discover_container .discover_cards .hiddenCard {
+    display: none;
+  }
+}
+@media screen and (max-width: 834px) {
+  .discover .discover_container {
+    padding-bottom: 60px;
+  }
+  .discover .discover_container .left_and_right {
+    width: 315px;
+    height: 71px;
+  }
+  .discover .discover_container .left_and_right .discover_left > h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .discover .discover_container .left_and_right .discover_left > p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .discover .discover_container .left_and_right .discover_right {
+    display: none;
+  }
+  .discover .discover_container .discover_cards {
+    width: 315px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+  }
+  .discover .discover_container .discover_cards .discover_card {
+    gap: 30px;
+    width: 315px;
+    height: 402px;
+  }
+  .discover .discover_container .discover_cards .discover_card .discover_top > img {
+    width: 315px;
+    height: 238px;
+  }
+  .discover .discover_container .discover_cards .discover_card .discover_bottom {
+    margin: 20px;
+  }
+  .discover .discover_container .discover_cards .hiddenCard {
+    display: initial;
+  }
+  .discover .discover_container .mobile_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .discover .discover_container .mobile_button > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 50px;
+    gap: 12px;
+    width: 315px;
+    height: 60px;
+    border: 2px solid #a259ff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+  .discover .discover_container .mobile_button > button:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }

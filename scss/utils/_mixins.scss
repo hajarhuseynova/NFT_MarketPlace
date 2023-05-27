@@ -44,3 +44,10 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+@mixin Caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: $label_text;
+}
