@@ -9,6 +9,14 @@
   text-transform: capitalize;
   color: $white;
 }
+@mixin H3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: $white;
+}
 
 @mixin H4 {
   font-style: normal;
