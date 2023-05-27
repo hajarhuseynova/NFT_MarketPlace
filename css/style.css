@@ -139,6 +139,10 @@ body {
   height: 100px;
   background-color: #2b2b2b;
 }
+.navbar .container {
+  width: 1280px;
+  margin: auto;
+}
 .navbar .navbar_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,6 +244,10 @@ body {
   .navbar {
     height: 54px;
   }
+  .navbar .container {
+    width: 834px;
+    margin: auto;
+  }
   .navbar .navbar_container {
     padding: 15px 50px;
   }
@@ -268,6 +276,10 @@ body {
   }
 }
 @media screen and (max-width: 834px) {
+  .navbar .container {
+    width: 375px;
+    margin: auto;
+  }
   .navbar .navbar_container {
     padding: 15px 30px;
   }
