@@ -97,6 +97,9 @@
     }
   }
 }
+body {
+  background-color: $background;
+}
 @media screen and (max-width: 1280px) {
   .container {
     width: 690px;
@@ -1081,13 +1084,13 @@
     }
   }
 }
-.mushroom {
-  width: 100%;
-  > img {
-    width: 100%;
-    height: 693px;
-  }
-}
+// .mushroom {
+//   width: 100%;
+//   > img {
+//     width: 100%;
+//     height: 693px;
+//   }
+// }
 .work {
   width: 100%;
   margin: auto;
@@ -1106,7 +1109,6 @@
     .work_cards {
       gap: 30px;
       width: 1050px;
-      height: 439px;
       display: flex;
       .work_card {
         display: flex;
@@ -1115,21 +1117,262 @@
         padding: 10px 30px 30px;
         gap: 20px;
         width: 330px;
-        height: 439px;
+
         background: $background-secondary;
         border-radius: 20px;
-      
-        > h5 {
-          @include H5;
+        .words {
+          > h5 {
+            @include H5;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          > p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: $white;
+          }
         }
-        > p {
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .work {
+    .work_container {
+      padding-bottom: 40px;
+      padding-top: 40px;
+      > h3 {
+        font-size: 28px;
+        line-height: 140%;
+      }
+      > p {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 40px;
+      }
+      .work_cards {
+        width: 690px;
+
+        .work_card {
+          width: 210px;
+          > img {
+            width: 160px;
+            height: 160px;
+          }
+          .words {
+            > h5 {
+              font-size: 16px;
+            }
+            > p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .work {
+    .work_container {
+      .work_cards {
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        .work_card {
+          width: 315px;
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          gap: 0;
+          > img {
+            width: 100px;
+            height: 100px;
+            margin: 28.5px 20px;
+          }
+          .words {
+            width: 155px;
+            margin: 20px 20px 20px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.join {
+  width: 100%;
+  margin: auto;
+  background-color: $background;
+  .join_container {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background-color: $background-secondary;
+    width: 1050px;
+    display: flex;
+    .join_left {
+      > img {
+        margin: 60px 80px 60px 60px;
+      }
+    }
+    .join_right {
+      margin-top: 79px;
+      margin-right: 60px;
+      width: 425px;
+      height: 272px;
+      > h3 {
+        @include H3;
+        margin-bottom: 10px;
+      }
+      > p {
+        @include BodyText;
+        margin-bottom: 40px;
+      }
+      .inputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 425px;
+        height: 60px;
+        > input {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0px 25px;
+          width: 231px;
+          height: 60px;
+          border-radius: 20px;
+          border: 1px solid transparent;
+          font-family: "Work Sans";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          text-align: center;
-          color: $white;
+          color: $background;
         }
+        > button {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 0px 50px;
+          gap: 12px;
+          width: 211px;
+          height: 62px;
+          background-color: $secondary_filled;
+          border-radius: 20px;
+          margin-left: -65px;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          cursor: pointer;
+          transition: 0.5s;
+          border: 1px solid transparent;
+          color: $white;
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .join {
+    .join_container {
+      width: 690px;
+      .join_left {
+        > img {
+          width: 300px;
+          height: 280px;
+          margin: 40px 30px;
+        }
+      }
+      .join_right {
+        width: 300px;
+        margin-top: 40px;
+        > h3 {
+          font-size: 28px;
+          line-height: 140%;
+        }
+        > p {
+          font-size: 16px;
+          line-height: 140%;
+        }
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 300px;
+          height: 108px;
+          > input {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 270px;
+            height: 46px;
+            background: #ffffff;
+            border: 1px solid #858584;
+            border-radius: 20px;
+            padding: 0 15px;
+            margin-bottom: 16px;
+          }
+          > button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 50px;
+            gap: 12px;
+            width: 300px;
+            height: 46px;
+            background: $secondary_filled;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+            font-family: "Work Sans";
+            font-style: normal;
+            font-weight: 600;
+            margin-left: 0;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: $white;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 834px) {
+  .join {
+    .join_container {
+      width: 315px;
+      display: flex;
+      background-color: transparent;
+      flex-direction: column;
+      .join_left {
+        > img {
+          width: 315px;
+          height: 255px;
+          margin: 0;
+        }
+      }
+      .join_right {
+        width: 310px;
+        margin-top: 30px;
       }
     }
   }

@@ -51,3 +51,10 @@
   line-height: 110%;
   color: $label_text;
 }
+@mixin Paragraf {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #cccccc;
+}
