@@ -94,33 +94,13 @@ footer {
           color: $background;
         }
         > button {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end;
-          align-items: center;
           padding: 0px 50px;
-          gap: 12px;
           width: 211px;
           height: 62px;
-          background-color: $secondary_filled;
-          border-radius: 20px;
           margin-left: -65px;
           flex: none;
           order: 1;
           flex-grow: 0;
-          cursor: pointer;
-          transition: 0.5s;
-          border: 1px solid transparent;
-          color: $white;
-          font-family: "Work Sans";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 16px;
-          line-height: 140%;
-          text-align: center;
-          &:hover {
-            transform: scale(1.05);
-          }
         }
       }
     }
@@ -204,29 +184,10 @@ footer {
             margin-bottom: 16px;
           }
           > button {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
             padding: 0px 50px;
-            gap: 12px;
             width: 300px;
             height: 46px;
-            background: $secondary_filled;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: 0.5s;
-            font-family: "Work Sans";
-            font-style: normal;
-            font-weight: 600;
             margin-left: 0;
-            font-size: 16px;
-            line-height: 140%;
-            text-align: center;
-            color: $white;
-            &:hover {
-              transform: scale(1.05);
-            }
           }
         }
       }

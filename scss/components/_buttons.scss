@@ -1,0 +1,43 @@
+.filled_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 224px;
+  height: 60px;
+  background: $secondary_filled;
+  font-family: "Work Sans";
+  border-radius: 20px;
+  border: 1px solid transparent;
+  color: $white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.empty_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid $secondary_filled;
+  border-radius: 20px;
+  background-color: transparent;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(1.05);
+}
