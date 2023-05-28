@@ -6,15 +6,11 @@
   gap: 12px;
   width: 240px;
   height: 12px;
-  background: #ffffff;
-  border: 1px solid #858584;
+  background: $white;
+  border: 1px solid $label_text;
   border-radius: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  /* or 22px */
-
-  /* Background */
-
-  color: #2b2b2b;
+  color: $background;
 }

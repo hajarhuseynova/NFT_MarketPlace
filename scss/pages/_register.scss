@@ -11,9 +11,12 @@
     display: flex;
     .register_left {
       margin-right: 60px;
-      > img {
+      .hidden {
         width: 610px;
         height: 691px;
+      }
+      .hide {
+        display: none;
       }
     }
     .register_right {
@@ -65,7 +68,7 @@
       display: flex;
       .register_left {
         margin-right: 40px;
-        > img {
+        .hidden {
           width: 397px;
           height: 615px;
         }
@@ -119,9 +122,11 @@
       flex-direction: column;
       .register_left {
         margin-right: 0;
-        > img {
-          width: 375px;
-          height: 232px;
+        .hidden {
+          display: none;
+        }
+        .hide {
+          display: block;
         }
       }
       .register_right {

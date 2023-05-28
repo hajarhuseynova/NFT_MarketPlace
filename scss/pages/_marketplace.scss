@@ -1,0 +1,199 @@
+.container {
+  width: 1050px;
+  margin: auto;
+}
+.search {
+  width: 100%;
+  .search_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    > h2 {
+      @include H2;
+      margin-bottom: 10px;
+    }
+    > p {
+      @include BodyText;
+      margin-bottom: 30px;
+    }
+    .input {
+      position: relative;
+      > input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 10px;
+        gap: 10px;
+        width: 1030px;
+        height: 36px;
+        border: 1px solid #3b3b3b;
+        background-color: $background;
+        border-radius: 20px;
+      }
+      > img {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+      }
+    }
+  }
+}
+.choice {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid $label_text;
+  .choice_container {
+    padding-top: 10px;
+    display: flex;
+    .left {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 30px;
+      gap: 16px;
+      width: 525px;
+      height: 60px;
+      border-bottom: 2px solid #858584;
+      > h5 {
+        @include H5;
+      }
+      .circle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 50px;
+        height: 32px;
+        background: #858584;
+        border-radius: 20px;
+        span {
+          font-family: "Space Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #ffffff;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 30px;
+      gap: 16px;
+      width: 525px;
+      height: 60px;
+      > h5 {
+        @include H5;
+      }
+      .circle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px;
+        gap: 10px;
+        width: 40px;
+        height: 32px;
+        background: #3b3b3b;
+        border-radius: 20px;
+
+        span {
+          font-family: "Space Mono";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.cards {
+  width: 100%;
+  .cards_container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .card {
+      width: 330px;
+      height: 469px;
+      background: $background-secondary;
+      border-radius: 20px;
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        transform: scale(0.95);
+      }
+      .discover_bottom {
+        margin: 20px 30px;
+        > h5 {
+          @include H5;
+          margin-bottom: 5px;
+        }
+        .discover_footer {
+          display: flex;
+          > img {
+            margin-right: 12px;
+          }
+          > p {
+            @include BodyText;
+            font-size: 16px;
+            line-height: 140%;
+            font-family: "Space Mono";
+          }
+        }
+        .discover_info {
+          display: flex;
+          margin-top: 25px;
+          .left_info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 21px 0px 0px;
+            gap: 8px;
+            width: 135px;
+            height: 43px;
+            > p:first-child {
+              @include Caption;
+            }
+            > p:last-child {
+              @include BodyText;
+              font-size: 16px;
+              line-height: 140%;
+              font-family: "Space Mono";
+            }
+          }
+          .right_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0px;
+            gap: 8px;
+            width: 135px;
+            height: 43px;
+            > p:first-child {
+              @include Caption;
+            }
+            > p:last-child {
+              @include BodyText;
+              font-size: 16px;
+              line-height: 140%;
+              font-family: "Space Mono";
+            }
+          }
+        }
+      }
+    }
+  }
+}
