@@ -4,6 +4,7 @@ footer {
   .container {
     width: 1280px;
     margin: auto;
+    background-color: $background_secondary;
   }
   .footer_container {
     padding-top: 40px;
@@ -11,6 +12,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1049.41px;
+    background-color: $background_secondary;
     .footer_left {
       display: flex;
       flex-direction: column;
@@ -134,7 +137,6 @@ footer {
       flex-direction: column;
       justify-content: center;
       width: 834px;
-
       .footer_left {
         margin-bottom: 30px;
         width: 690px;
@@ -150,7 +152,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 865px) {
   footer {
     .container {
       width: 315px;
@@ -165,6 +167,7 @@ footer {
         margin-bottom: 30px;
         width: 315px;
         margin: 0;
+        padding: 0;
         > img {
           margin-bottom: 20px;
         }
@@ -174,6 +177,7 @@ footer {
         width: 315px;
         > img {
           margin-bottom: 20px;
+          margin-top: 40px;
         }
       }
       .footer_right {
