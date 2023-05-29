@@ -1706,20 +1706,32 @@ body {
   }
   .categories .categories_container .categories_cards .categories_card {
     width: 150px;
-    height: 209px;
+    height: 231px;
+  }
+  .categories .categories_container .categories_cards .categories_card .categories_image {
+    width: 150px;
+    height: 142px;
   }
   .categories .categories_container .categories_cards .categories_card .categories_image > img {
     width: 150px;
     height: 142px;
   }
   .categories .categories_container .categories_cards .categories_card .categories_footer {
-    padding: 20px 20px 25px;
+    padding: 20px 20px 25px 20px;
     gap: 25px;
+    width: 150px;
+    height: 67px;
   }
   .categories .categories_container .categories_cards .categories_card .categories_footer > span {
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
+    width: 110px;
+    height: 44px;
+  }
+  .categories .categories_container .categories_cards .top_card {
+    width: 150px;
+    height: 209px;
   }
 }
 @media screen and (max-width: 834px) {
@@ -2054,6 +2066,360 @@ body {
   .discover .discover_container .mobile_button > button:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+  }
+}
+.mushroom {
+  background-image: url("../../assests/images/mushroom.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+.mushroom .mushroom_container {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  .mushroom::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(162, 89, 255, 0)), to(#a259ff));
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .mushroom {
+    position: relative;
+    height: 630px;
+  }
+  .mushroom .mushroom_container {
+    z-index: 10;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    width: 670px;
+    height: 210px;
+  }
+  .mushroom .mushroom_container .mushroom_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 375px;
+    height: 210px;
+  }
+  .mushroom .mushroom_container .mushroom_left .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    width: 151px;
+    height: 44px;
+    background: #3b3b3b;
+    border-radius: 20px;
+  }
+  .mushroom .mushroom_container .mushroom_left .tag > img {
+    width: 24px;
+    height: 24px;
+  }
+  .mushroom .mushroom_container .mushroom_left .tag > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 140%;
+    margin-left: 12px;
+    -webkit-columns: #fff;
+       -moz-columns: #fff;
+            columns: #fff;
+  }
+  .mushroom .mushroom_container .mushroom_left > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .mushroom .mushroom_container .mushroom_left > button {
+    width: 198px;
+    height: 60px;
+    background: #fff;
+    color: #a259ff;
+  }
+  .mushroom .mushroom_container .mushroom_right {
+    width: 295px;
+    height: 210px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock {
+    margin-top: 66px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+    width: 295px;
+    height: 144px;
+    background: rgba(59, 59, 59, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #858584;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+    width: 235px;
+    height: 61px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general {
+    width: 53px;
+    height: 61px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: "Space Mono";
+    margin-bottom: 5px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_point {
+    width: 18px;
+    height: 39px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_point > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: "Space Mono";
+  }
+  .mushroom .mushroom_container .mushroom_right .hidden {
+    display: none;
+  }
+}
+@media screen and (max-width: 864px) {
+  .mushroom::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(162, 89, 255, 0)), to(#a259ff));
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .mushroom {
+    position: relative;
+    height: 590px;
+  }
+  .mushroom .mushroom_container {
+    bottom: 40px;
+    width: 315px;
+    height: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mushroom .mushroom_container .mushroom_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 315px;
+    height: 196px;
+  }
+  .mushroom .mushroom_container .mushroom_left > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  .mushroom .mushroom_container .mushroom_left .hide {
+    display: none;
+  }
+  .mushroom .mushroom_container .mushroom_right {
+    width: 295px;
+    height: 210px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock {
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px;
+    width: 295px;
+    height: 144px;
+    background: rgba(59, 59, 59, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 20px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #858584;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0px;
+    width: 235px;
+    height: 61px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general {
+    width: 53px;
+    height: 61px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: "Space Mono";
+    margin-bottom: 5px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_general > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_point {
+    width: 18px;
+    height: 39px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .mushroom .mushroom_container .mushroom_right .clock .time .time_point > h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: "Space Mono";
+  }
+  .mushroom .mushroom_container .mushroom_right .hidden {
+    display: initial;
+  }
+  .mushroom .mushroom_container .mushroom_right > button {
+    margin-top: 30px;
+    width: 315px;
+    height: 60px;
+    background: #fff;
+    color: #a259ff;
   }
 }
 .work {
