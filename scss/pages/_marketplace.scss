@@ -199,6 +199,8 @@
           display: flex;
           > img {
             margin-right: 12px;
+            width: 24px;
+            height: 24px;
           }
           > p {
             @include BodyText;
@@ -279,6 +281,21 @@
             height: 238px;
           }
         }
+      }
+      .first {
+        order: 1;
+      }
+      .second {
+        order: 2;
+      }
+      .third {
+        order: 3;
+      }
+      .fourth {
+        order: 4;
+      }
+      .fifth {
+        order: 5;
       }
       .hide {
         display: none;

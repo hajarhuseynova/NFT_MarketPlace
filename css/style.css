@@ -3611,6 +3611,8 @@ body {
 }
 .cards .cards_container .card .discover_bottom .discover_footer > img {
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 .cards .cards_container .card .discover_bottom .discover_footer > p {
   font-style: normal;
@@ -3722,6 +3724,31 @@ body {
   .cards .cards_container .card .discover_top > img {
     width: 315px;
     height: 238px;
+  }
+  .cards .cards_container .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .cards .cards_container .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cards .cards_container .third {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .cards .cards_container .fourth {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .cards .cards_container .fifth {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .cards .cards_container .hide {
     display: none;
