@@ -99,7 +99,7 @@
   .choice_container {
     padding-top: 10px;
     display: flex;
-    .left {
+    .common {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -108,7 +108,6 @@
       gap: 16px;
       width: 525px;
       height: 60px;
-      border-bottom: 2px solid #858584;
       > h5 {
         @include H5;
       }
@@ -131,38 +130,12 @@
           color: #ffffff;
         }
       }
-    }
-    .right {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 0px 30px;
-      gap: 16px;
-      width: 525px;
-      height: 60px;
-      > h5 {
-        @include H5;
-      }
-      .circle {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      .middle {
         padding: 5px 10px;
-        gap: 10px;
         width: 40px;
         height: 32px;
         background: #3b3b3b;
         border-radius: 20px;
-
-        span {
-          font-family: "Space Mono";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 140%;
-          color: #ffffff;
-        }
       }
     }
   }
@@ -173,13 +146,7 @@
       width: 834px;
       display: flex;
       justify-content: center;
-      .left {
-        width: 340px;
-        > h5 {
-          font-size: 16px;
-        }
-      }
-      .right {
+      .common {
         width: 340px;
         > h5 {
           font-size: 16px;
@@ -192,13 +159,7 @@
   .choice {
     .choice_container {
       width: 375px;
-      .left {
-        width: 157.5px;
-        .circle {
-          display: none;
-        }
-      }
-      .right {
+      .common {
         width: 157.5px;
         .circle {
           display: none;
