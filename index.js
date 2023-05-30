@@ -9,21 +9,22 @@ const creatorCardMedia = document.querySelectorAll(".creator_card_media");
 const sidebarButton = document.getElementById("sidebarButton");
 const joinButton = document.getElementById("joinButton");
 const inputJoin = document.getElementById("inputJoin");
-
+const deleteImage = document.getElementById("deleteImage");
+const registerPageImage = document.getElementById("registerPageImage");
 hamburgerMenu.addEventListener("click", () => {
-  sidebar.classList.toggle("visible");
+  sidebar.classList.add("visible");
+});
+deleteImage.addEventListener("click", () => {
+  sidebar.classList.remove("visible");
+});
+registerPageImage.addEventListener("click", () => {
+  window.location.href = "./register.html";
 });
 registerButton.addEventListener("click", () => {
   window.location.href = "./register.html";
 });
 navbarLeft.addEventListener("click", () => {
   window.location.href = "./index.html";
-});
-rankingButton.addEventListener("click", () => {
-  window.location.href = "./rankings.html";
-});
-seeAllButton.addEventListener("click", () => {
-  window.location.href = "./marketplace.html";
 });
 creatorCard.forEach((element) => {
   element.addEventListener("click", () => {
@@ -35,8 +36,3 @@ creatorCardMedia.forEach((element) => {
     window.location.href = "./artist.html";
   });
 });
-sidebarButton.addEventListener("click", () => {
-  window.location.href = "./register.html";
-});
-
-joinButton.addEventListener("click", () => {});

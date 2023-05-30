@@ -18,6 +18,7 @@
     }
     .input {
       position: relative;
+      z-index: -1;
       > input {
         display: flex;
         flex-direction: column;
@@ -57,6 +58,7 @@
         line-height: 140%;
       }
       .input {
+        z-index: -1;
         > input {
           width: 645px;
           height: 36px;
@@ -85,6 +87,7 @@
         width: 315px;
       }
       .input {
+        z-index: -1;
         > input {
           width: 280px;
           height: 36px;

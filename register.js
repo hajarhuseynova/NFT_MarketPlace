@@ -36,6 +36,10 @@ inputPasswordAgain.addEventListener("keyup", () => {
   }
 });
 registerConfirmButton.addEventListener("click", () => {
+  checkUsername.style.opacity = "1";
+  checkPasswordAgain.style.opacity = "1";
+  checkPassword.style.opacity = "1";
+  checkEmail.style.opacity = "1";
   if (
     inputUsername.value.length >= 3 &&
     validateEmailRegex.test(inputEmail.value) &&

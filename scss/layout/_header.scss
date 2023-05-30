@@ -61,7 +61,7 @@
   }
 }
 .sidebar {
-  width: 0;
+  width: 0px;
   position: absolute;
   transition: 0.5s;
   .link_sidebar {
@@ -70,14 +70,13 @@
 }
 @media screen and (max-width: 1280px) {
   .sidebar {
-    // width: 200px;
+    width: 0px;
     display: flex;
     background-color: $background_secondary;
     position: absolute;
-    top: 54px;
+    top: 0px;
     right: 50px;
-    border-radius: 20px;
-    height: 178px;
+    height: 100vh;
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
@@ -85,106 +84,131 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: -50px;
+      top: 0px;
       left: 0;
       bottom: 0;
-      padding: 54px 0 0;
+      padding: 0;
       box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
       z-index: 60;
-      width: 200px;
-      a:first-child {
-        margin-top: 15px;
+      width: 250px;
+      > img {
+        width: 50px;
+        height: 50px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-bottom: 150px;
       }
       a {
-        width: 190px;
+        width: 290px;
         text-decoration: none;
         display: flex;
         align-items: center;
         color: $white;
         margin-top: 10px;
+        margin-bottom: 30px;
         > img {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           margin-right: 10px;
           margin-left: 10px;
         }
+        > span {
+          font-size: 23px;
+          font-weight: 500;
+          line-height: 120%;
+        }
       }
-      .border {
-        margin-top: 5px;
-        width: 200px;
-        height: 1px;
-        background-color: $background;
+      .lastimage {
+        display: none;
       }
       > button {
-        margin-left: 5px;
-        margin-top: 10px;
-        width: 190px;
-        height: 30px;
+        margin-left: 15px;
+        margin-top: auto;
+        margin-bottom: 30px;
+        width: 220px;
+        height: 50px;
         font-weight: 400;
         font-size: 16px;
+        > img {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
   .visible {
-    width: 200px;
+    width: 250px;
   }
 }
 @media screen and (max-width: 834px) {
   .sidebar {
-    top: 54px;
-    right: 30px;
-    border-radius: 20px;
+    width: 0px;
+    display: flex;
+    background-color: $background_secondary;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    height: 100vh;
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
     .link_sidebar {
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: -50px;
+      top: 0px;
       left: 0;
       bottom: 0;
-      padding: 54px 0 0;
+      padding: 0;
       box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
       z-index: 60;
-      width: 150px;
-      a:first-child {
+      width: 250px;
+      > img {
+        width: 40px;
+        height: 40px;
         margin-top: 15px;
+        margin-left: 5px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 150px;
       }
       a {
-        width: 140px;
+        width: 290px;
         text-decoration: none;
         display: flex;
         align-items: center;
         color: $white;
         margin-top: 10px;
-        font-size: 12px;
+        margin-bottom: 30px;
         > img {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           margin-right: 10px;
           margin-left: 10px;
         }
+        > span {
+          font-size: 23px;
+          font-weight: 500;
+          line-height: 120%;
+        }
       }
-      .border {
-        margin-top: 5px;
-        width: 150px;
-        height: 1px;
-        background-color: $background;
+      .lastimage {
+        display: block;
+        width: 30px;
+        margin-left: 10px;
+        margin-top: auto;
+        margin-bottom: 30px;
       }
       > button {
-        margin-left: 5px;
-        margin-top: 10px;
-        width: 140px;
-        height: 30px;
-        font-weight: 400;
-        font-size: 12px;
-        > img {
-          width: 18px;
-          height: 18px;
-        }
+        display: none;
       }
     }
   }
   .visible {
-    width: 150px;
+    width: 50px;
   }
 }
 @media screen and (max-width: 1280px) {
