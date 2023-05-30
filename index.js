@@ -7,6 +7,9 @@ const seeAllButton = document.querySelector("#seeAllButton");
 const creatorCard = document.querySelectorAll(".creator_card");
 const creatorCardMedia = document.querySelectorAll(".creator_card_media");
 const sidebarButton = document.getElementById("sidebarButton");
+const joinButton = document.getElementById("joinButton");
+const inputJoin = document.getElementById("inputJoin");
+
 hamburgerMenu.addEventListener("click", () => {
   sidebar.classList.toggle("visible");
 });
@@ -35,3 +38,5 @@ creatorCardMedia.forEach((element) => {
 sidebarButton.addEventListener("click", () => {
   window.location.href = "./register.html";
 });
+
+joinButton.addEventListener("click", () => {});

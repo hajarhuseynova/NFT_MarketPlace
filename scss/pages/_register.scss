@@ -9,6 +9,7 @@
     width: 1280px;
     height: 691px;
     display: flex;
+    position: relative;
     .register_left {
       margin-right: 60px;
       .hidden {
@@ -62,6 +63,7 @@
         height: 46px;
       }
     }
+  
   }
 }
 @media screen and (max-width: 1280px) {

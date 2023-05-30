@@ -182,11 +182,8 @@
       height: 469px;
       background: $background-secondary;
       border-radius: 20px;
-      flex: none;
-      order: 0;
-      flex-grow: 1;
-      transition: 0.5s;
       cursor: pointer;
+      flex-grow: 0;
       &:hover {
         transform: scale(0.95);
       }

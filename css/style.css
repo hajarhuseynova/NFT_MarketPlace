@@ -2924,6 +2924,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .register .register_container .register_left {
   margin-right: 60px;
@@ -4151,18 +4152,10 @@ body {
   height: 469px;
   background: #3b3b3b;
   border-radius: 20px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   cursor: pointer;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 .cards .cards_container .card:hover {
   -webkit-transform: scale(0.95);

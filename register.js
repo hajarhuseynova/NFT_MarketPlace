@@ -9,22 +9,23 @@ const checkPassword = document.getElementById("checkPassword");
 const checkPasswordAgain = document.getElementById("checkPasswordAgain");
 //button
 const registerConfirmButton = document.getElementById("registerConfirmButton");
+let validateEmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 inputUsername.addEventListener("keyup", () => {
   checkUsername.style.opacity = "1";
-  if (inputUsername.value != "") {
+  if (inputUsername.value.length >= 3) {
     checkUsername.style.opacity = "0";
   }
 });
 inputEmail.addEventListener("keyup", () => {
   checkEmail.style.opacity = "1";
-  if (inputEmail.value != "") {
+  if (validateEmailRegex.test(inputEmail.value)) {
     checkEmail.style.opacity = "0";
   }
 });
 inputPassword.addEventListener("keyup", () => {
   checkPassword.style.opacity = "1";
-  if (inputPassword.value != "") {
+  if (inputPassword.value.length > 8) {
     checkPassword.style.opacity = "0";
   }
 });
@@ -34,18 +35,19 @@ inputPasswordAgain.addEventListener("keyup", () => {
     checkPasswordAgain.style.opacity = "0";
   }
 });
-
 registerConfirmButton.addEventListener("click", () => {
   if (
-    inputUsername.value.length == 0 ||
-    inputEmail.value.length == 0 ||
-    inputPassword.value.length == 0 ||
-    inputPasswordAgain.value.length == 0
+    inputUsername.value.length >= 3 &&
+    validateEmailRegex.test(inputEmail.value) &&
+    inputPassword.value == inputPasswordAgain.value &&
+    inputPasswordAgain.value.length > 8
   ) {
-    alert("Please,fill the all gap.");
-    return;
-  }
-  if (inputPassword.value.length == inputPasswordAgain.value.length) {
-    alert("Please,write correct passwords.");
+    alert("Successfully!");
+    inputEmail.value = "";
+    inputUsername.value = "";
+    inputPassword.value = "";
+    inputPasswordAgain.value = "";
+  } else {
+    alert("Something wrong,please again.");
   }
 });
