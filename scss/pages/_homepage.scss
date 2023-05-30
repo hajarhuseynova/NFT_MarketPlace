@@ -553,6 +553,7 @@ body {
         gap: 30px;
         margin-top: 40px;
         margin-bottom: 40px;
+        cursor: pointer;
         .creator_card_media {
           position: relative;
           display: flex;
@@ -1107,10 +1108,8 @@ body {
       .mushroom_left {
         display: flex;
         flex-direction: column;
-
         width: 375px;
         height: 210px;
-
         .tag {
           display: flex;
           align-items: center;

@@ -1560,6 +1560,7 @@ body {
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
+    cursor: pointer;
   }
   .creators .creators_container .creator_cards_media .creator_card_media {
     position: relative;
@@ -2945,7 +2946,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 100px 0px;
+  padding: 65px 0px;
   width: 610px;
 }
 .register .register_container .register_right > h2 {
@@ -2983,7 +2984,20 @@ body {
   left: 20px;
 }
 .register .register_container .register_right .input > input {
-  margin-bottom: 15px;
+  margin-bottom: 3px;
+}
+.register .register_container .register_right .input > p {
+  margin-bottom: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: none;
+  color: #fff;
+  font-weight: 300;
 }
 .register .register_container .register_right > button {
   margin-top: 15px;
@@ -3026,7 +3040,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 80px 0px;
+    padding: 50px 0px;
     width: 397px;
   }
   .register .register_container .register_right > h2 {
@@ -3050,6 +3064,9 @@ body {
   .register .register_container .register_right .input > input {
     width: 235px;
   }
+  .register .register_container .register_right .input > p {
+    font-size: 14px;
+  }
   .register .register_container .register_right > button {
     width: 325px;
   }
@@ -3065,7 +3082,7 @@ body {
   .register .register_container {
     margin: auto;
     width: 375px;
-    height: 747px;
+    height: 795px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

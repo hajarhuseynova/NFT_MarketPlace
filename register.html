@@ -47,7 +47,7 @@
         </div>
         <div class="sidebar">
           <div class="link_sidebar">
-            <a href="">
+            <a href="./marketplace.html">
               <img
                 src="./assests/icons/sidebar_icons/marketplace.svg"
                 alt="Sidebar icon"
@@ -55,7 +55,7 @@
               <span>Marketplace</span></a
             >
             <div class="border"></div>
-            <a href="">
+            <a href="./rankings.html">
               <img
                 src="./assests/icons/sidebar_icons/rankings.svg"
                 alt="Sidebar icon"
@@ -71,7 +71,7 @@
               <span>Connect a wallet</span></a
             >
             <div class="border"></div>
-            <button class="filled_button">
+            <button class="filled_button" id="sidebarButton">
               <img
                 src="./assests/icons/navbar_button_icon.svg"
                 alt="Navbar Button Icon"
@@ -103,7 +103,13 @@
               src="./assests/icons/register_icons/username.svg"
               alt="Username"
             />
-            <input type="text" placeholder="Username" class="register_input" />
+            <input
+              type="text"
+              placeholder="Username"
+              class="register_input"
+              id="inputUsername"
+            />
+            <p id="checkUsername">Please,write username.</p>
           </div>
           <div class="input">
             <img
@@ -111,10 +117,12 @@
               alt="Email Address"
             />
             <input
-              type="text"
+              type="email"
               placeholder="Email Address"
               class="register_input"
+              id="inputEmail"
             />
+            <p id="checkEmail">Please,write email.</p>
           </div>
           <div class="input">
             <img
@@ -125,7 +133,9 @@
               type="password"
               placeholder="Password"
               class="register_input"
+              id="inputPassword"
             />
+            <p id="checkPassword">Please,write password.</p>
           </div>
           <div class="input">
             <img
@@ -136,9 +146,13 @@
               type="password"
               placeholder="Confirm Password"
               class="register_input"
+              id="inputPasswordAgain"
             />
+            <p id="checkPasswordAgain">Please,write the same password.</p>
           </div>
-          <button class="filled_button">Create Acoount</button>
+          <button class="filled_button" id="registerConfirmButton">
+            Create Acoount
+          </button>
         </div>
       </div>
     </section>
@@ -204,5 +218,6 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="./register.js"></script>
   </body>
 </html>
