@@ -1468,6 +1468,7 @@ body {
           line-height: 140%;
           color: $background;
         }
+
         > button {
           padding: 0px 50px;
           width: 211px;
@@ -1476,6 +1477,10 @@ body {
           flex: none;
           order: 1;
           flex-grow: 0;
+          &:hover {
+            transform: scale(1);
+            background-color: #462275;
+          }
         }
       }
     }

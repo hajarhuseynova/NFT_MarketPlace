@@ -25,7 +25,6 @@
       align-items: flex-start;
       padding: 100px 0px;
       width: 610px;
-      height: 691px;
       > h2 {
         @include H2;
         margin-bottom: 20px;
@@ -33,6 +32,8 @@
       > p {
         @include BodyText;
         margin-bottom: 40px;
+        width: 460px;
+        height: 70px;
       }
       .input {
         position: relative;
@@ -47,7 +48,7 @@
       }
       > button {
         margin-top: 15px;
-        padding: 0px 50px;
+        padding: 11px 50px;
         gap: 12px;
         width: 330px;
         height: 46px;
@@ -79,7 +80,6 @@
         align-items: flex-start;
         padding: 80px 0px;
         width: 397px;
-        height: 615px;
         > h2 {
           font-size: 38px;
           line-height: 120%;
@@ -88,6 +88,7 @@
           font-size: 16px;
           line-height: 140%;
           width: 325px;
+          height: 44px;
         }
         .input {
           position: relative;
@@ -135,9 +136,10 @@
         margin: auto;
         padding: 30px 0px;
         width: 315px;
-        height: 515px;
         > p {
           margin-bottom: 30px;
+          width: 315px;
+          height: 44px;
         }
         .input {
           > input {

@@ -7,10 +7,25 @@
   width: 240px;
   height: 12px;
   background: $white;
-  border: 1px solid $label_text;
   border-radius: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
   color: $background;
+  border: 1px solid transparent;
 }
+input:focus {
+  outline: none;
+}
+// ::placeholder {
+//   color: black;
+//   opacity: 1;
+// }
+
+// :-ms-input-placeholder {
+//   color: black;
+// }
+
+// ::-ms-input-placeholder {
+//   color: black;
+// }

@@ -30,7 +30,6 @@ footer {
         @include Paragraf;
         margin-bottom: 20px;
       }
-
       .social_media {
         > a {
           text-decoration: none;
@@ -44,12 +43,11 @@ footer {
       align-items: flex-start;
       padding: 0px;
       width: 240px;
-
       > img {
         margin-bottom: 35px;
-        margin-top: 7px;
       }
-      > p {
+      > a {
+        text-decoration: none;
         @include Paragraf;
         margin-bottom: 20px;
       }
@@ -60,9 +58,7 @@ footer {
       align-items: flex-start;
       padding: 0px;
       width: 420px;
-
       > img {
-        margin-top: 7px;
         margin-bottom: 35px;
       }
       > p {
@@ -100,6 +96,10 @@ footer {
           flex: none;
           order: 1;
           flex-grow: 0;
+          &:hover {
+            transform: scale(1);
+            background-color: #462275;
+          }
         }
       }
     }
@@ -123,9 +123,15 @@ footer {
       .footer_middle {
         margin-bottom: 30px;
         width: 690px;
+        > img {
+          margin-bottom: 30px;
+        }
       }
       .footer_right {
         width: 690px;
+        > img {
+          margin-bottom: 30px;
+        }
       }
     }
   }
