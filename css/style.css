@@ -3980,6 +3980,7 @@ body {
   border: 1px solid #3b3b3b;
   background-color: #2b2b2b;
   border-radius: 20px;
+  color: #fff;
 }
 .search .search_container .input > img {
   position: absolute;
@@ -4299,6 +4300,9 @@ body {
   .cards .cards_container .card .discover_top > img {
     width: 315px;
     height: 238px;
+  }
+  .cards .cards_container .card .discover_bottom .little {
+    font-size: 20px;
   }
   .cards .cards_container .first {
     -webkit-box-ordinal-group: 2;
