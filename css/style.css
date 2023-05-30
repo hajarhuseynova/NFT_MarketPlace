@@ -545,7 +545,7 @@ footer .container {
 }
 footer .footer_container {
   padding-top: 40px;
-  padding-bottom: 103px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +707,6 @@ footer .footer_container .footer_right .inputs > button:hover {
     margin: auto;
   }
   footer .footer_container {
-    padding-bottom: 122px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -741,7 +740,6 @@ footer .footer_container .footer_right .inputs > button:hover {
     margin: auto;
   }
   footer .footer_container {
-    padding-bottom: 103px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
