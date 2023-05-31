@@ -17,3 +17,17 @@ inputSearch.addEventListener("input", () => {
     }
   });
 });
+
+const heartWhite = document.querySelectorAll(".heartWhite");
+const heartRed = document.querySelectorAll(".heartRed");
+
+for (let i = 0; i < heartWhite.length; i++) {
+  heartWhite[i].addEventListener("click", () => {
+    heartWhite[i].style.display = "none";
+    heartRed[i].style.display = "block";
+  });
+  heartRed[i].addEventListener("click", () => {
+    heartWhite[i].style.display = "block";
+    heartRed[i].style.display = "none";
+  });
+}

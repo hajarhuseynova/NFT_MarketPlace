@@ -894,6 +894,7 @@ body {
             display: flex;
             > img {
               margin-right: 12px;
+              width: 24px;
             }
             > p {
               @include BodyText;
@@ -1446,6 +1447,7 @@ body {
         margin-bottom: 40px;
       }
       .inputs {
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;

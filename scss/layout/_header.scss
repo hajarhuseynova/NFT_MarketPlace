@@ -140,6 +140,7 @@
   }
   .visible {
     width: 250px;
+    z-index: 10;
   }
 }
 @media screen and (max-width: 834px) {

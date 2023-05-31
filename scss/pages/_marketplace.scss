@@ -18,7 +18,7 @@
     }
     .input {
       position: relative;
-      z-index: -1;
+      z-index: 1;
       > input {
         display: flex;
         flex-direction: column;
@@ -32,6 +32,7 @@
         background-color: $background;
         border-radius: 20px;
         color: $white;
+        z-index: 1;
       }
       > img {
         position: absolute;
@@ -58,10 +59,11 @@
         line-height: 140%;
       }
       .input {
-        z-index: -1;
+        z-index: 1;
         > input {
           width: 645px;
           height: 36px;
+          z-index: 1;
         }
       }
     }
@@ -87,7 +89,7 @@
         width: 315px;
       }
       .input {
-        z-index: -1;
+        z-index: 1;
         > input {
           width: 280px;
           height: 36px;
@@ -190,6 +192,31 @@
       &:hover {
         transform: scale(0.95);
       }
+      .discover_top {
+        position: relative;
+        .heartWhite {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          z-index: 10;
+          right: 15px;
+          top: 8px;
+          cursor: pointer;
+        }
+        .heartRed {
+          display: none;
+          cursor: pointer;
+        }
+        .heartRedDisplay {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          z-index: 10;
+          right: 15px;
+          top: 8px;
+          cursor: pointer;
+        }
+      }
       .discover_bottom {
         margin: 20px 30px;
         > h5 {
@@ -261,6 +288,17 @@
       .card {
         width: 325px;
         height: 469px;
+        .discover_top {
+          .heartWhite {
+            width: 25px;
+            height: 25px;
+          }
+
+          .heartRedDisplay {
+            width: 25px;
+            height: 25px;
+          }
+        }
       }
       .hide {
         display: none;

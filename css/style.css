@@ -407,6 +407,7 @@ input:focus {
   }
   .visible {
     width: 250px;
+    z-index: 10;
   }
 }
 @media screen and (max-width: 834px) {
@@ -2043,6 +2044,7 @@ body {
 }
 .discover .discover_container .discover_cards .discover_card .discover_bottom .discover_footer > img {
   margin-right: 12px;
+  width: 24px;
 }
 .discover .discover_container .discover_cards .discover_card .discover_bottom .discover_footer > p {
   font-style: normal;
@@ -2793,6 +2795,7 @@ body {
   margin-bottom: 40px;
 }
 .join .join_container .join_right .inputs {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3984,7 +3987,7 @@ body {
 }
 .search .search_container .input {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .search .search_container .input > input {
   display: -webkit-box;
@@ -4008,6 +4011,7 @@ body {
   background-color: #2b2b2b;
   border-radius: 20px;
   color: #fff;
+  z-index: 1;
 }
 .search .search_container .input > img {
   position: absolute;
@@ -4032,11 +4036,12 @@ body {
     line-height: 140%;
   }
   .search .search_container .input {
-    z-index: -1;
+    z-index: 1;
   }
   .search .search_container .input > input {
     width: 645px;
     height: 36px;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 834px) {
@@ -4059,7 +4064,7 @@ body {
     width: 315px;
   }
   .search .search_container .input {
-    z-index: -1;
+    z-index: 1;
   }
   .search .search_container .input > input {
     width: 280px;
@@ -4193,6 +4198,31 @@ body {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
+.cards .cards_container .card .discover_top {
+  position: relative;
+}
+.cards .cards_container .card .discover_top .heartWhite {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
+.cards .cards_container .card .discover_top .heartRed {
+  display: none;
+  cursor: pointer;
+}
+.cards .cards_container .card .discover_top .heartRedDisplay {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  right: 15px;
+  top: 8px;
+  cursor: pointer;
+}
 .cards .cards_container .card .discover_bottom {
   margin: 20px 30px;
 }
@@ -4308,6 +4338,14 @@ body {
   .cards .cards_container .card {
     width: 325px;
     height: 469px;
+  }
+  .cards .cards_container .card .discover_top .heartWhite {
+    width: 25px;
+    height: 25px;
+  }
+  .cards .cards_container .card .discover_top .heartRedDisplay {
+    width: 25px;
+    height: 25px;
   }
   .cards .cards_container .hide {
     display: none;
