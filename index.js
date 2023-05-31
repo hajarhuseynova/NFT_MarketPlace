@@ -34,3 +34,28 @@ creatorCardMedia.forEach((element) => {
     window.location.href = "./artist.html";
   });
 });
+
+const emailInput = document.querySelector(".email_input");
+const toast = document.querySelector(".toast");
+const buttonToast = document.getElementById("buttonToast");
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+buttonToast.addEventListener("click", () => {
+  const email = emailInput.value;
+  if (correctEmailStructure(email)) {
+    toastMessage("Successfully!");
+  } else {
+    toastMessage("Invalid Email!");
+  }
+});
+
+function correctEmailStructure(email) {
+  return emailRegex.test(email);
+}
+function toastMessage(message) {
+  toast.innerText = message;
+  toast.style.opacity = "1";
+  setTimeout(function () {
+    toast.style.opacity = "0";
+  }, 5000);
+}
