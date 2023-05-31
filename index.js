@@ -35,6 +35,10 @@ creatorCardMedia.forEach((element) => {
   });
 });
 
+const registerButtonSidebar = document.getElementById("registerButtonSidebar");
+registerButtonSidebar.addEventListener("click", () => {
+  window.location.href = "./register.html";
+});
 const emailInput = document.querySelector(".inputs>input");
 const toastContainer = document.querySelector(".toastContainer");
 const buttonToast = document.querySelector(".inputs>button");

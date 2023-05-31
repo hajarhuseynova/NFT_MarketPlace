@@ -1622,6 +1622,13 @@ body {
     height: 100px;
     background: #3b3b3b;
     border-radius: 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .creators .creators_container .creator_cards_media .creator_card_media:hover {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   .creators .creators_container .creator_cards_media .creator_card_media .creator_card_left_media .creator_number {
     display: -webkit-box;
@@ -4130,6 +4137,13 @@ body {
   gap: 16px;
   width: 525px;
   height: 60px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.choice .choice_container .common:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .choice .choice_container .common > h5 {
   font-style: normal;
@@ -4138,6 +4152,9 @@ body {
   line-height: 140%;
   text-transform: capitalize;
   color: #fff;
+}
+.choice .choice_container .common .muted {
+  color: #858584;
 }
 .choice .choice_container .common .circle {
   display: -webkit-box;
@@ -4171,6 +4188,9 @@ body {
   height: 32px;
   background: #3b3b3b;
   border-radius: 20px;
+}
+.choice .choice_container .borderChoice {
+  border-bottom: 2px solid #858584;
 }
 
 @media screen and (max-width: 1280px) {
@@ -4232,10 +4252,10 @@ body {
   position: relative;
 }
 .cards .cards_container .card .discover_top .heartWhite {
+  z-index: 0;
   position: absolute;
   width: 35px;
   height: 35px;
-  z-index: 10;
   right: 15px;
   top: 8px;
   cursor: pointer;
@@ -4248,7 +4268,7 @@ body {
   position: absolute;
   width: 35px;
   height: 35px;
-  z-index: 10;
+  z-index: 0;
   right: 15px;
   top: 8px;
   cursor: pointer;
@@ -4369,6 +4389,10 @@ body {
     width: 325px;
     height: 469px;
   }
+  .cards .cards_container .card .discover_top > img:first-child {
+    width: 325px;
+    height: 295px;
+  }
   .cards .cards_container .card .discover_top .heartWhite {
     width: 25px;
     height: 25px;
@@ -4389,6 +4413,10 @@ body {
   .cards .cards_container .card {
     width: 315px;
     height: 402px;
+  }
+  .cards .cards_container .card .discover_top > img:first-child {
+    width: 315px;
+    height: 238px;
   }
   .cards .cards_container .card .discover_top > img {
     width: 315px;
@@ -4520,6 +4548,12 @@ body {
 .choice .choice_container .word {
   width: 262.5px;
   text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.choice .choice_container .word:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .choice .choice_container .word > h5 {
   font-style: normal;
@@ -4528,8 +4562,10 @@ body {
   line-height: 140%;
   text-transform: capitalize;
   color: #fff;
-  color: #858584;
   margin-bottom: 14.5px;
+}
+.choice .choice_container .word .label_text {
+  color: #858584;
 }
 .choice .choice_container .word .hide {
   display: none;
@@ -4638,6 +4674,13 @@ body {
   background: #3b3b3b;
   border-radius: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.cards .cards_container table tbody tr:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
 }
 .cards .cards_container table tbody tr td {
   text-align: start;

@@ -79,7 +79,7 @@
               alt="Button icon"
               id="registerPageImage"
             />
-            <button class="filled_button" id="registerButton">
+            <button class="filled_button" id="registerButtonSidebar">
               <img
                 src="./assests/icons/navbar_button_icon.svg"
                 alt="Navbar Button Icon"
@@ -98,19 +98,19 @@
     </section>
     <section class="choice">
       <div class="container choice_container">
-        <div class="word border">
-          <h5 style="color: white" class="hidden">Today</h5>
-          <h5 style="color: white" class="hide">1d</h5>
-        </div>
-        <div class="word">
-          <h5 class="hidden">This Week</h5>
-          <h5 class="hide">7d</h5>
-        </div>
-        <div class="word">
-          <h5 class="hidden">This Month</h5>
-          <h5 class="hide">30d</h5>
-        </div>
-        <div class="word"><h5>All Time</h5></div>
+        <button class="word border" id="dayButton">
+          <h5 class="hidden" id="todayH">Today</h5>
+          <h5 class="hide" id="oneH">1d</h5>
+        </button>
+        <button class="word" id="weekButton">
+          <h5 class="hidden " id="weekH">This Week</h5>
+          <h5 class="hide" id="sevenH">7d</h5>
+        </button>
+        <button class="word" id="monthButton">
+          <h5 class="hidden" id="monthH">This Month</h5>
+          <h5 class="hide" id="thirtyH">30d</h5>
+        </button>
+        <button class="word" id="allTimeButton"><h5 id="allH">All Time</h5></button>
       </div>
     </section>
     <section class="cards">
@@ -491,6 +491,8 @@
         </div>
       </div>
     </footer>
+    <div class="toastContainer"></div>
     <script src="./index.js"></script>
+    <script src="./ranking.js"></script>
   </body>
 </html>

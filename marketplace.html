@@ -79,7 +79,7 @@
               alt="Button icon"
               id="registerPageImage"
             />
-            <button class="filled_button" id="registerButton">
+            <button class="filled_button" id="registerButtonSidebar">
               <img
                 src="./assests/icons/navbar_button_icon.svg"
                 alt="Navbar Button Icon"
@@ -107,18 +107,18 @@
     <div class="border_top"></div>
     <section class="choice">
       <div class="container choice_container">
-        <div class="common" style="border-bottom: 2px solid #858584">
-          <h5>NFTs</h5>
+        <button class="common borderChoice" id="collectionButton">
+          <h5 id="main">NFTs</h5>
           <div class="circle">
             <span>302</span>
           </div>
-        </div>
-        <div class="common">
-          <h5>Favourites</h5>
+        </button>
+        <button class="common" id="favouriteButton">
+          <h5 class="muted" id="fav">Favourites</h5>
           <div class="circle middle">
             <span>67</span>
           </div>
-        </div>
+        </button>
       </div>
     </section>
     <section class="cards">
@@ -244,15 +244,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Designer Bear</h5>
@@ -282,15 +282,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Colorful Dog 0356</h5>
@@ -396,15 +396,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Space Travel</h5>
@@ -434,15 +434,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Sunset Dimension</h5>
@@ -472,15 +472,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Desert Walk</h5>
@@ -548,15 +548,15 @@
               alt="Discover First Image"
             />
             <img
-            src="./assests/icons/artist_icons/heartWhite.svg"
-            alt="Heart"
-            class="heartWhite"
-          />
-          <img
-            src="./assests/icons/artist_icons/heartRed.svg"
-            alt="Heart"
-            class="heartRed heartRedDisplay"
-          />
+              src="./assests/icons/artist_icons/heartWhite.svg"
+              alt="Heart"
+              class="heartWhite"
+            />
+            <img
+              src="./assests/icons/artist_icons/heartRed.svg"
+              alt="Heart"
+              class="heartRed heartRedDisplay"
+            />
           </div>
           <div class="discover_bottom">
             <h5>Colorful Dog 0344</h5>
@@ -642,6 +642,7 @@
         </div>
       </div>
     </footer>
+    <div class="toastContainer"></div>
     <script src="./marketplace.js"></script>
     <script src="./index.js"></script>
   </body>

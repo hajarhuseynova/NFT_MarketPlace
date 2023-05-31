@@ -69,10 +69,17 @@
     .word {
       width: 262.5px;
       text-align: center;
+      background-color: transparent;
+      border: 1px solid transparent;
+      &:hover {
+        transform: scale(1);
+      }
       > h5 {
         @include H5;
-        color: $label_text;
         margin-bottom: 14.5px;
+      }
+      .label_text {
+        color: $label_text;
       }
       .hide {
         display: none;
@@ -175,6 +182,11 @@
           background: #3b3b3b;
           border-radius: 20px;
           margin-bottom: 20px;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            transform: scale(0.97);
+          }
           td {
             text-align: start;
           }

@@ -114,8 +114,17 @@
       gap: 16px;
       width: 525px;
       height: 60px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1);
+      }
       > h5 {
         @include H5;
+      }
+      .muted {
+        color: $label_text;
       }
       .circle {
         display: flex;
@@ -143,6 +152,9 @@
         background: #3b3b3b;
         border-radius: 20px;
       }
+    }
+    .borderChoice {
+      border-bottom: 2px solid #858584;
     }
   }
 }
@@ -195,10 +207,10 @@
       .discover_top {
         position: relative;
         .heartWhite {
+          z-index: 0;
           position: absolute;
           width: 35px;
           height: 35px;
-          z-index: 10;
           right: 15px;
           top: 8px;
           cursor: pointer;
@@ -211,7 +223,7 @@
           position: absolute;
           width: 35px;
           height: 35px;
-          z-index: 10;
+          z-index: 0;
           right: 15px;
           top: 8px;
           cursor: pointer;
@@ -289,6 +301,10 @@
         width: 325px;
         height: 469px;
         .discover_top {
+          > img:first-child {
+            width: 325px;
+            height: 295px;
+          }
           .heartWhite {
             width: 25px;
             height: 25px;
@@ -315,6 +331,10 @@
         width: 315px;
         height: 402px;
         .discover_top {
+          > img:first-child {
+            width: 315px;
+            height: 238px;
+          }
           > img {
             width: 315px;
             height: 238px;

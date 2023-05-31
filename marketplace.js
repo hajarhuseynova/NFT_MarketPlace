@@ -20,7 +20,10 @@ inputSearch.addEventListener("input", () => {
 
 const heartWhite = document.querySelectorAll(".heartWhite");
 const heartRed = document.querySelectorAll(".heartRed");
-
+const collectionButton = document.getElementById("collectionButton");
+const favouriteButton = document.getElementById("favouriteButton");
+const main = document.getElementById("main");
+const fav = document.getElementById("fav");
 for (let i = 0; i < heartWhite.length; i++) {
   heartWhite[i].addEventListener("click", () => {
     heartWhite[i].style.display = "none";
@@ -31,3 +34,15 @@ for (let i = 0; i < heartWhite.length; i++) {
     heartRed[i].style.display = "none";
   });
 }
+collectionButton.addEventListener("click", () => {
+  favouriteButton.classList.remove("borderChoice");
+  collectionButton.classList.add("borderChoice");
+  main.classList.remove("muted");
+  fav.classList.add("muted");
+});
+favouriteButton.addEventListener("click", () => {
+  collectionButton.classList.remove("borderChoice");
+  favouriteButton.classList.add("borderChoice");
+  main.classList.add("muted");
+  fav.classList.remove("muted");
+});
