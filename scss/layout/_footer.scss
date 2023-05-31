@@ -13,6 +13,7 @@ footer {
     align-items: center;
     width: 1049.41px;
     background-color: $background_secondary;
+
     .footer_left {
       display: flex;
       flex-direction: column;
@@ -101,6 +102,18 @@ footer {
             background-color: #462275;
           }
         }
+      }
+      .toast {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #462275;
+        color: $white;
+        padding: 30px 100px;
+        border-radius: 4px;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.3s ease-in;
       }
     }
   }

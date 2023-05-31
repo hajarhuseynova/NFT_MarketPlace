@@ -35,9 +35,10 @@ creatorCardMedia.forEach((element) => {
   });
 });
 
-const emailInput = document.querySelector(".email_input");
-const toast = document.querySelector(".toast");
-const buttonToast = document.getElementById("buttonToast");
+const emailInput = document.querySelector(".inputs>input");
+const toastContainer = document.querySelector(".toastContainer");
+const buttonToast = document.querySelector(".inputs>button");
+
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 buttonToast.addEventListener("click", () => {
@@ -48,14 +49,51 @@ buttonToast.addEventListener("click", () => {
     toastMessage("Invalid Email!");
   }
 });
-
 function correctEmailStructure(email) {
   return emailRegex.test(email);
 }
 function toastMessage(message) {
+  const toast = document.createElement("div");
+  toast.classList.add("toast");
   toast.innerText = message;
-  toast.style.opacity = "1";
+  toastContainer.appendChild(toast);
   setTimeout(function () {
-    toast.style.opacity = "0";
-  }, 5000);
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
+}
+const inputFooter = document.getElementById("inputFooter");
+const buttonFooter = document.getElementById("buttonFooter");
+console.log(inputFooter);
+console.log(buttonFooter);
+buttonFooter.addEventListener("click", () => {
+  const emailFooter = inputFooter.value;
+  if (correctEmailStructure(emailFooter)) {
+    toastMessage("Successfully!");
+  } else {
+    toastMessage("Invalid Email!");
+  }
+});
+function correctEmailStructure(emailFooter) {
+  return emailRegex.test(emailFooter);
+}
+function toastMessage(message) {
+  const toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.innerText = message;
+  toastContainer.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
 }

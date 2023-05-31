@@ -775,16 +775,17 @@
             <input
               type="text"
               placeholder="Enter your email here"
-              class="email_input"/>
-            <button class="filled_button" class="email_button" id="buttonToast">
+              id="emailInput"
+            />
+            <button class="filled_button" id="buttonToast">
               <img src="./assests/icons/join_button.svg" alt="Button Image" />
               Subscribe
             </button>
           </div>
-          <div class="toast"></div>
         </div>
       </div>
     </section>
+
     <footer>
       <div class="container footer_container">
         <div class="footer_left">
@@ -837,8 +838,12 @@
           />
           <p>Get exclusive promotions & updates straight to your inbox.</p>
           <div class="inputs">
-            <input type="text" placeholder="Enter your email here" />
-            <button class="filled_button">
+            <input
+              type="text"
+              placeholder="Enter your email here"
+              id="inputFooter"
+            />
+            <button class="filled_button" id="buttonFooter">
               <img src="./assests/icons/join_button.svg" alt="Button Image" />
               Subscribe
             </button>
@@ -846,6 +851,7 @@
         </div>
       </div>
     </footer>
+    <div class="toastContainer"></div>
     <script src="./index.js"></script>
   </body>
 </html>

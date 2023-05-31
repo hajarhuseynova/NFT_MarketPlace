@@ -701,6 +701,19 @@ footer .footer_container .footer_right .inputs > button:hover {
           transform: scale(1);
   background-color: #462275;
 }
+footer .footer_container .footer_right .toast {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #462275;
+  color: #fff;
+  padding: 30px 100px;
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
 
 @media screen and (max-width: 1280px) {
   footer .container {
@@ -2766,7 +2779,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
 }
 .join .join_container .join_left > img {
   margin: 60px 80px 60px 60px;
@@ -2854,18 +2866,22 @@ body {
           transform: scale(1);
   background-color: #462275;
 }
-.join .join_container .join_right .toast {
-  position: absolute;
+
+.toastContainer {
+  position: fixed;
   top: 0;
   right: 0;
-  background-color: #a259ff;
+  z-index: 9999;
+}
+.toastContainer .toast {
+  background-color: #462275;
   color: #fff;
-  padding: 30px 100px;
+  padding: 20px;
   border-radius: 4px;
-  z-index: 1;
+  margin-bottom: 8px;
   opacity: 0;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 1280px) {
