@@ -5,6 +5,10 @@ const deleteImage = document.getElementById("deleteImage");
 const navbarLeft = document.querySelector(".navbar_left");
 const registerButtonSidebar = document.getElementById("registerButtonSidebar");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const registerButton = document.getElementById("registerButton");
+registerButton.addEventListener("click", () => {
+  window.location.href = "./register.html";
+});
 document.body.addEventListener("click", () => {
   sidebar.classList.remove("visible");
 });

@@ -2,8 +2,9 @@
   width: 100%;
   height: 100px;
   background-color: $background;
+  margin: auto;
   .container {
-    width: 1280px;
+    width: 1050px;
     margin: auto;
   }
   .navbar_container {
@@ -68,7 +69,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .sidebar {
     width: 0px;
     display: flex;
@@ -143,7 +144,7 @@
     z-index: 10;
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .sidebar {
     width: 0px;
     display: flex;
@@ -213,11 +214,11 @@
     width: 52px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .navbar {
     height: 54px;
     .container {
-      width: 834px;
+      width: 100%;
       margin: auto;
     }
     .navbar_container {
@@ -250,7 +251,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .navbar {
     .container {
       width: 375px;

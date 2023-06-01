@@ -1,17 +1,14 @@
 
-const registerButton = document.getElementById("registerButton");
+
 const rankingButton = document.querySelector("#rankingButton");
 const seeAllButton = document.querySelector("#seeAllButton");
 const creatorCard = document.querySelectorAll(".creator_card");
 const creatorCardMedia = document.querySelectorAll(".creator_card_media");
 const registerPageImage = document.getElementById("registerPageImage");
+
 registerPageImage.addEventListener("click", () => {
   window.location.href = "./register.html";
 });
-registerButton.addEventListener("click", () => {
-  window.location.href = "./register.html";
-});
-
 creatorCard.forEach((element) => {
   element.addEventListener("click", () => {
     window.location.href = "./artist.html";

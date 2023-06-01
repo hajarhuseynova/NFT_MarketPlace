@@ -1,19 +1,18 @@
 .register {
   width: 100%;
   .container {
-    width: 1280px;
+    width: 1050px;
     margin: auto;
   }
   .register_container {
     margin: auto;
-    width: 1280px;
     height: 691px;
     display: flex;
     position: relative;
     .register_left {
       margin-right: 60px;
       .hidden {
-        width: 610px;
+        width: 100%;
         height: 691px;
       }
       .hide {
@@ -63,24 +62,22 @@
         height: 46px;
       }
     }
-  
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .register {
     width: 100%;
     .container {
-      width: 834px;
+      width: 690px;
     }
     .register_container {
       margin: auto;
-      width: 834px;
       height: 615px;
       display: flex;
       .register_left {
         margin-right: 40px;
         .hidden {
-          width: 397px;
+          width: 100%;
           height: 615px;
         }
       }
@@ -89,7 +86,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 50px 0px;
-        width: 397px;
+
         > h2 {
           font-size: 38px;
           line-height: 120%;
@@ -121,7 +118,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .register {
     width: 100%;
     .container {

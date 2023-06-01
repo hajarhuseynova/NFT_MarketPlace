@@ -2,7 +2,6 @@ footer {
   width: 100%;
   background-color: $background_secondary;
   .container {
-    width: 1280px;
     margin: auto;
     background-color: $background_secondary;
   }
@@ -11,9 +10,8 @@ footer {
     padding-bottom: 40px;
     display: flex;
     align-items: center;
-    width: 1049.41px;
     background-color: $background_secondary;
-
+    margin: auto;
     .footer_left {
       display: flex;
       flex-direction: column;
@@ -118,7 +116,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   footer {
     .container {
       width: 690px;
@@ -127,7 +125,7 @@ footer {
     .footer_container {
       flex-direction: column;
       justify-content: center;
-      width: 834px;
+
       .footer_left {
         margin-bottom: 30px;
         width: 690px;
@@ -148,7 +146,7 @@ footer {
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   footer {
     .container {
       width: 315px;
@@ -157,7 +155,7 @@ footer {
     .footer_container {
       flex-direction: column;
       justify-content: center;
-      width: 315px;
+
       .footer_left {
         margin-bottom: 30px;
         width: 315px;

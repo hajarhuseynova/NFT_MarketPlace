@@ -26,7 +26,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .topbar {
     width: 100%;
     background-color: $background;
@@ -44,7 +44,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .topbar {
     width: 100%;
     background-color: $background;
@@ -141,7 +141,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .animakid {
     .animakid_container {
       padding-top: 30px;
@@ -232,7 +232,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .animakid {
     .animakid_container {
       .animakid_top {
@@ -329,12 +329,12 @@
   background-color: $background-secondary;
   margin: auto;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .border_top {
     max-width: 834px;
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .border_top {
     max-width: 375px;
   }
@@ -401,10 +401,9 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .choice_artist {
     .choice_artist_container {
-      width: 834px;
       display: flex;
       justify-content: center;
       .common {
@@ -440,7 +439,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .choice_artist {
     .choice_artist_container {
       width: 375px;
@@ -476,7 +475,7 @@
       &:hover {
         transform: scale(0.95);
       }
-      
+
       .discover_bottom {
         margin: 20px 30px;
         > h5 {
@@ -540,7 +539,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .cards {
     .cards_container {
       .card {
@@ -553,7 +552,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .cards {
     .cards_container {
       padding-top: 40px;

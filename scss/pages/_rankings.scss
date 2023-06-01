@@ -18,7 +18,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .container {
     width: 690px;
   }
@@ -37,7 +37,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .container {
     width: 315px;
   }
@@ -90,10 +90,9 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .choice {
     .choice_container {
-      width: 834px;
       display: flex;
       justify-content: center;
       .word {
@@ -105,10 +104,9 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .choice {
     .choice_container {
-      width: 375px;
       .word {
         width: 78.75px;
         > h5 {
@@ -275,7 +273,7 @@
     }
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1050px) {
   .cards {
     .cards_container {
       table {
@@ -354,7 +352,7 @@
     }
   }
 }
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 690px) {
   .cards {
     .cards_container {
       table {
