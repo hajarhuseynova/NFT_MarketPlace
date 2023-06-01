@@ -9,7 +9,6 @@ const checkPassword = document.getElementById("checkPassword");
 const checkPasswordAgain = document.getElementById("checkPasswordAgain");
 //button
 const registerConfirmButton = document.getElementById("registerConfirmButton");
-let validateEmailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 inputUsername.addEventListener("keyup", () => {
   checkUsername.style.opacity = "1";
@@ -54,11 +53,4 @@ registerConfirmButton.addEventListener("click", () => {
   } else {
     alert("Something wrong,please again.");
   }
-});
-
-document.body.addEventListener("click", () => {
-  sidebar.classList.remove("visible");
-});
-sidebar.addEventListener("click", (e) => {
-  e.stopPropagation();
 });

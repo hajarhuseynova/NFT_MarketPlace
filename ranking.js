@@ -2,6 +2,7 @@ const dayButton = document.getElementById("dayButton");
 const weekButton = document.getElementById("weekButton");
 const monthButton = document.getElementById("monthButton");
 const allTimeButton = document.getElementById("allTimeButton");
+
 dayButton.addEventListener("click", () => {
   resetBorder();
   resetText();
@@ -35,7 +36,6 @@ function resetBorder() {
   weekButton.classList.remove("border");
   dayButton.classList.remove("border");
 }
-
 function resetText() {
   todayH.classList.add("label_text");
   oneH.classList.add("label_text");
@@ -50,10 +50,3 @@ weekH.classList.add("label_text");
 monthH.classList.add("label_text");
 thirtyH.classList.add("label_text");
 allH.classList.add("label_text");
-
-document.body.addEventListener("click", () => {
-  sidebar.classList.remove("visible");
-});
-sidebar.addEventListener("click", (e) => {
-  e.stopPropagation();
-});

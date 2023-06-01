@@ -103,14 +103,16 @@
           <h5 class="hide" id="oneH">1d</h5>
         </button>
         <button class="word" id="weekButton">
-          <h5 class="hidden " id="weekH">This Week</h5>
+          <h5 class="hidden" id="weekH">This Week</h5>
           <h5 class="hide" id="sevenH">7d</h5>
         </button>
         <button class="word" id="monthButton">
           <h5 class="hidden" id="monthH">This Month</h5>
           <h5 class="hide" id="thirtyH">30d</h5>
         </button>
-        <button class="word" id="allTimeButton"><h5 id="allH">All Time</h5></button>
+        <button class="word" id="allTimeButton">
+          <h5 id="allH">All Time</h5>
+        </button>
       </div>
     </section>
     <section class="cards">
@@ -482,8 +484,12 @@
           />
           <p>Get exclusive promotions & updates straight to your inbox.</p>
           <div class="inputs">
-            <input type="text" placeholder="Enter your email here" />
-            <button class="filled_button">
+            <input
+              type="text"
+              placeholder="Enter your email here"
+              id="inputFooter"
+            />
+            <button class="filled_button" id="buttonFooter">
               <img src="./assests/icons/join_button.svg" alt="Button Image" />
               Subscribe
             </button>
@@ -492,7 +498,9 @@
       </div>
     </footer>
     <div class="toastContainer"></div>
-    <script src="./index.js"></script>
+
     <script src="./ranking.js"></script>
+    <script src="./footer.js"></script>
+    <script src="./sidebar.js"></script>
   </body>
 </html>

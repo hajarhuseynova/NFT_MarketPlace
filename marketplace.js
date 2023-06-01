@@ -1,6 +1,5 @@
 const inputSearch = document.getElementById("inputSearch");
 const cardsContainer = document.querySelector(".cards_container");
-
 inputSearch.addEventListener("input", () => {
   const searchValue = inputSearch.value.trim().toLowerCase();
   const cardsArr = [...cardsContainer.children];
@@ -23,6 +22,9 @@ const collectionButton = document.getElementById("collectionButton");
 const favouriteButton = document.getElementById("favouriteButton");
 const main = document.getElementById("main");
 const fav = document.getElementById("fav");
+registerButtonSidebar.addEventListener("click", () => {
+  window.location.href = "./register.html";
+});
 
 for (let i = 0; i < heartWhite.length; i++) {
   heartWhite[i].addEventListener("click", () => {
@@ -63,6 +65,34 @@ favouriteButton.addEventListener("click", () => {
 document.body.addEventListener("click", () => {
   sidebar.classList.remove("visible");
 });
-sidebar.addEventListener("click", (e) => {
-  e.stopPropagation();
+
+const inputFooterMarket = document.getElementById("inputFooter");
+const buttonFooterMarket = document.getElementById("buttonFooter");
+const emailRegexMarket = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const toastContainerMarket = document.querySelector(".toastContainer");
+buttonFooterMarket.addEventListener("click", () => {
+  const emailFooter = inputFooterMarket.value;
+  if (correctEmailStructure(emailFooter)) {
+    toastMessage("Successfully!");
+  } else {
+    toastMessage("Invalid Email!");
+  }
 });
+function correctEmailStructure(emailFooter) {
+  return emailRegexMarket.test(emailFooter);
+}
+function toastMessage(message) {
+  const toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.innerText = message;
+  toastContainerMarket.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainerMarket.removeChild(toast);
+    }, 300);
+  }, 2000);
+}
