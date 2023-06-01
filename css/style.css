@@ -702,19 +702,6 @@ footer .footer_container .footer_right .inputs > button:hover {
           transform: scale(1);
   background-color: #462275;
 }
-footer .footer_container .footer_right .toast {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #462275;
-  color: #fff;
-  padding: 30px 100px;
-  border-radius: 4px;
-  z-index: 1;
-  opacity: 0;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
 
 @media screen and (max-width: 1050px) {
   footer .container {
@@ -2892,8 +2879,18 @@ body {
   right: 0;
   z-index: 9999;
 }
-.toastContainer .toast {
-  background-color: #462275;
+.toastContainer .success {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.toastContainer .alert {
+  background-color: red;
   color: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -2990,10 +2987,6 @@ body {
 .register {
   width: 100%;
 }
-.register .container {
-  width: 1050px;
-  margin: auto;
-}
 .register .register_container {
   margin: auto;
   height: 691px;
@@ -3001,9 +2994,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 100%;
 }
 .register .register_container .register_left {
+  width: 50%;
   margin-right: 60px;
+}
+.register .register_container .register_left > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .register .register_container .register_left .hidden {
   width: 100%;
@@ -3024,7 +3026,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 65px 0px;
-  width: 610px;
+  width: 50%;
 }
 .register .register_container .register_right > h2 {
   font-style: normal;
@@ -3071,6 +3073,7 @@ body {
   line-height: 160%;
   text-transform: capitalize;
   color: #ffffff;
+  opacity: 0;
   font-size: 16px;
   text-transform: none;
   color: #fff;
@@ -3087,9 +3090,6 @@ body {
 @media screen and (max-width: 1050px) {
   .register {
     width: 100%;
-  }
-  .register .container {
-    width: 690px;
   }
   .register .register_container {
     margin: auto;
@@ -3150,13 +3150,8 @@ body {
   .register {
     width: 100%;
   }
-  .register .container {
-    width: 375px;
-    margin: auto;
-  }
   .register .register_container {
     margin: auto;
-    width: 375px;
     height: 795px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3167,7 +3162,12 @@ body {
             flex-direction: column;
   }
   .register .register_container .register_left {
+    width: 100%;
     margin-right: 0;
+  }
+  .register .register_container .register_left > img {
+    width: 100%;
+    height: 232px;
   }
   .register .register_container .register_left .hidden {
     display: none;
@@ -3224,8 +3224,8 @@ body {
   height: 370px;
 }
 .topbar .top_container > img {
-  max-width: 1280px;
-  max-height: 320px;
+  width: 100%;
+  height: 320px;
 }
 .topbar .top_container .absolute_image {
   position: absolute;
@@ -3695,6 +3695,13 @@ body {
   gap: 16px;
   width: 350px;
   height: 60px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.choice_artist .choice_artist_container .common:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 .choice_artist .choice_artist_container .common > h5 {
   font-style: normal;
@@ -3703,6 +3710,9 @@ body {
   line-height: 140%;
   text-transform: capitalize;
   color: #fff;
+}
+.choice_artist .choice_artist_container .common .label_text {
+  color: #858584;
 }
 .choice_artist .choice_artist_container .common .circle {
   display: -webkit-box;
@@ -3765,6 +3775,9 @@ body {
   height: 32px;
   background: #3b3b3b;
   border-radius: 20px;
+}
+.choice_artist .choice_artist_container .border {
+  border-bottom: 2px solid #858584;
 }
 
 @media screen and (max-width: 1050px) {

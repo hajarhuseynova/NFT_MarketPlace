@@ -10,47 +10,99 @@ const checkPasswordAgain = document.getElementById("checkPasswordAgain");
 //button
 const registerConfirmButton = document.getElementById("registerConfirmButton");
 
+inputUsername.addEventListener("blur", () => {
+  if (inputUsername.value.length < 3) {
+    checkUsername.style.opacity = "1";
+  } else {
+    checkUsername.style.opacity = "0";
+  }
+});
 inputUsername.addEventListener("keyup", () => {
-  checkUsername.style.opacity = "1";
   if (inputUsername.value.length >= 3) {
     checkUsername.style.opacity = "0";
   }
 });
+
+inputEmail.addEventListener("blur", () => {
+  if (!correctEmailStructure(inputEmail.value)) {
+    checkEmail.style.opacity = "1";
+  }
+});
 inputEmail.addEventListener("keyup", () => {
-  checkEmail.style.opacity = "1";
-  if (validateEmailRegex.test(inputEmail.value)) {
+  if (correctEmailStructure(inputEmail.value)) {
     checkEmail.style.opacity = "0";
   }
 });
+inputPassword.addEventListener("blur", () => {
+  if (inputPassword.value.length < 8) {
+    checkPassword.style.opacity = "1";
+  }
+});
 inputPassword.addEventListener("keyup", () => {
-  checkPassword.style.opacity = "1";
-  if (inputPassword.value.length > 8) {
+  if (inputPassword.value.length >= 8) {
     checkPassword.style.opacity = "0";
   }
 });
+inputPasswordAgain.addEventListener("blur", () => {
+  if (
+    inputPassword.value != inputPasswordAgain.value ||
+    inputPasswordAgain.value.length < 8
+  ) {
+    checkPasswordAgain.style.opacity = "1";
+  }
+});
 inputPasswordAgain.addEventListener("keyup", () => {
-  checkPasswordAgain.style.opacity = "1";
   if (inputPassword.value === inputPasswordAgain.value) {
     checkPasswordAgain.style.opacity = "0";
   }
 });
 registerConfirmButton.addEventListener("click", () => {
-  checkUsername.style.opacity = "1";
-  checkPasswordAgain.style.opacity = "1";
-  checkPassword.style.opacity = "1";
-  checkEmail.style.opacity = "1";
   if (
     inputUsername.value.length >= 3 &&
-    validateEmailRegex.test(inputEmail.value) &&
+    correctEmailStructure(inputEmail.value) &&
     inputPassword.value == inputPasswordAgain.value &&
-    inputPasswordAgain.value.length > 8
+    inputPasswordAgain.value.length >= 8
   ) {
-    alert("Successfully!");
+    toastConfirmMessage("Huhuu,Successfully Created!");
     inputEmail.value = "";
     inputUsername.value = "";
     inputPassword.value = "";
     inputPasswordAgain.value = "";
   } else {
-    alert("Something wrong,please again.");
+    toastAlertMessage("OPS! Something wrong!");
   }
 });
+
+function correctEmailStructure(emailFooter) {
+  return emailRegex.test(emailFooter);
+}
+function toastConfirmMessage(Confirmmessage) {
+  const toast = document.createElement("div");
+  toast.classList.add("success");
+  toast.innerText = Confirmmessage;
+  toastContainer.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
+}
+function toastAlertMessage(Alertmessage) {
+  const toast = document.createElement("div");
+  toast.classList.add("alert");
+  toast.innerText = Alertmessage;
+  toastContainer.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
+}

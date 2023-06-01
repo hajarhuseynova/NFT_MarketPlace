@@ -1,16 +1,19 @@
 .register {
   width: 100%;
-  .container {
-    width: 1050px;
-    margin: auto;
-  }
   .register_container {
     margin: auto;
     height: 691px;
     display: flex;
     position: relative;
+    width: 100%;
     .register_left {
+      width: 50%;
       margin-right: 60px;
+      > img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
       .hidden {
         width: 100%;
         height: 691px;
@@ -24,7 +27,7 @@
       flex-direction: column;
       align-items: flex-start;
       padding: 65px 0px;
-      width: 610px;
+      width: 50%;
       > h2 {
         @include H2;
         margin-bottom: 20px;
@@ -48,6 +51,7 @@
         > p {
           margin-bottom: 3px;
           @include BodyText;
+          opacity: 0;
           font-size: 16px;
           text-transform: none;
           color: $white;
@@ -67,9 +71,6 @@
 @media screen and (max-width: 1050px) {
   .register {
     width: 100%;
-    .container {
-      width: 690px;
-    }
     .register_container {
       margin: auto;
       height: 615px;
@@ -121,18 +122,18 @@
 @media screen and (max-width: 690px) {
   .register {
     width: 100%;
-    .container {
-      width: 375px;
-      margin: auto;
-    }
     .register_container {
       margin: auto;
-      width: 375px;
       height: 795px;
       display: flex;
       flex-direction: column;
       .register_left {
+        width: 100%;
         margin-right: 0;
+        > img {
+          width: 100%;
+          height: 232px;
+        }
         .hidden {
           display: none;
         }

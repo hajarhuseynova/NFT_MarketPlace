@@ -1,10 +1,12 @@
-
-
 const rankingButton = document.querySelector("#rankingButton");
 const seeAllButton = document.querySelector("#seeAllButton");
 const creatorCard = document.querySelectorAll(".creator_card");
 const creatorCardMedia = document.querySelectorAll(".creator_card_media");
 const registerPageImage = document.getElementById("registerPageImage");
+const emailInput = document.querySelector(".inputs>input");
+const toastContainerIndex = document.querySelector(".toastContainer");
+const buttonToast = document.querySelector(".inputs>button");
+const emailRegexIndex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 registerPageImage.addEventListener("click", () => {
   window.location.href = "./register.html";
@@ -26,26 +28,22 @@ seeAllButton.addEventListener("click", () => {
   window.location.href = "./marketplace.html";
 });
 
-const emailInput = document.querySelector(".inputs>input");
-const toastContainerIndex = document.querySelector(".toastContainer");
-const buttonToast = document.querySelector(".inputs>button");
-const emailRegexIndex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 buttonToast.addEventListener("click", () => {
   const email = emailInput.value;
   if (correctEmailStructure(email)) {
-    toastMessage("Successfully!");
+    toastConfirmMessage("Huhuu,Correct!");
   } else {
-    toastMessage("Invalid Email!");
+    toastAlertMessage("OPS!  Invalid Email!");
   }
 });
 function correctEmailStructure(email) {
   return emailRegexIndex.test(email);
 }
-function toastMessage(message) {
+function toastConfirmMessage(Confirmmessage) {
   const toast = document.createElement("div");
-  toast.classList.add("toast");
-  toast.innerText = message;
-  toastContainerIndex.appendChild(toast);
+  toast.classList.add("success");
+  toast.innerText = Confirmmessage;
+  toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;
   }, 100);
@@ -56,4 +54,18 @@ function toastMessage(message) {
     }, 300);
   }, 2000);
 }
-
+function toastAlertMessage(Alertmessage) {
+  const toast = document.createElement("div");
+  toast.classList.add("alert");
+  toast.innerText = Alertmessage;
+  toastContainer.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
+}

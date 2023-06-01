@@ -1507,8 +1507,17 @@ body {
   top: 0;
   right: 0;
   z-index: 9999;
-  .toast {
-    background-color: #462275;
+  .success {
+    background-color: green;
+    color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .alert {
+    background-color: red;
     color: #fff;
     padding: 20px;
     border-radius: 4px;

@@ -5,18 +5,33 @@ const toastContainer = document.querySelector(".toastContainer");
 buttonFooter.addEventListener("click", () => {
   const emailFooter = inputFooter.value;
   if (correctEmailStructure(emailFooter)) {
-    toastMessage("Successfully!");
+    toastConfirmMessage("Huhuu,Correct!");
   } else {
-    toastMessage("Invalid Email!");
+    toastAlertMessage("OPS!  Invalid Email!");
   }
 });
 function correctEmailStructure(emailFooter) {
   return emailRegex.test(emailFooter);
 }
-function toastMessage(message) {
+function toastConfirmMessage(Confirmmessage) {
   const toast = document.createElement("div");
-  toast.classList.add("toast");
-  toast.innerText = message;
+  toast.classList.add("success");
+  toast.innerText = Confirmmessage;
+  toastContainer.appendChild(toast);
+  setTimeout(function () {
+    toast.style.opacity = 1;
+  }, 100);
+  setTimeout(function () {
+    toast.style.opacity = 0;
+    setTimeout(function () {
+      toastContainer.removeChild(toast);
+    }, 300);
+  }, 2000);
+}
+function toastAlertMessage(Alertmessage) {
+  const toast = document.createElement("div");
+  toast.classList.add("alert");
+  toast.innerText = Alertmessage;
   toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;
