@@ -5,7 +5,6 @@
   .container {
     width: 1280px;
     margin: auto;
-    position: relative;
   }
   .navbar_container {
     display: flex;
@@ -64,6 +63,7 @@
   width: 0px;
   position: absolute;
   transition: 0.5s;
+  z-index: 15;
   .link_sidebar {
     display: none;
   }
@@ -73,9 +73,9 @@
     width: 0px;
     display: flex;
     background-color: $background_secondary;
-    position: absolute;
+    position: fixed;
     top: 0px;
-    right: 50px;
+    right: 0px;
     height: 100vh;
     padding-top: 0.5rem;
     overflow-x: hidden;
@@ -148,14 +148,14 @@
     width: 0px;
     display: flex;
     background-color: $background_secondary;
-    position: absolute;
+    position: fixed;
     top: 0px;
-    right: 10px;
+    right: 0;
     height: 100vh;
     padding-top: 0.5rem;
     overflow-x: hidden;
     overflow-y: auto;
-    z-index: 1;
+    z-index: 15;
     .link_sidebar {
       display: flex;
       flex-direction: column;
@@ -194,6 +194,7 @@
           font-size: 23px;
           font-weight: 500;
           line-height: 120%;
+          margin-left: 3px;
         }
       }
       .lastimage {
@@ -209,7 +210,7 @@
     }
   }
   .visible {
-    width: 50px;
+    width: 52px;
   }
 }
 @media screen and (max-width: 1280px) {

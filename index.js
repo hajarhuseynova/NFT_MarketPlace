@@ -9,11 +9,15 @@ const creatorCardMedia = document.querySelectorAll(".creator_card_media");
 const sidebarButton = document.getElementById("sidebarButton");
 const deleteImage = document.getElementById("deleteImage");
 const registerPageImage = document.getElementById("registerPageImage");
-hamburgerMenu.addEventListener("click", () => {
+hamburgerMenu.addEventListener("click", (e) => {
   sidebar.classList.add("visible");
+  e.stopPropagation();
 });
 deleteImage.addEventListener("click", () => {
   sidebar.classList.remove("visible");
+});
+sidebar.addEventListener("click", (e) => {
+  e.stopPropagation();
 });
 registerPageImage.addEventListener("click", () => {
   window.location.href = "./register.html";
@@ -34,7 +38,12 @@ creatorCardMedia.forEach((element) => {
     window.location.href = "./artist.html";
   });
 });
-
+rankingButton.addEventListener("click", () => {
+  window.location.href = "./rankings.html";
+});
+seeAllButton.addEventListener("click", () => {
+  window.location.href = "./marketplace.html";
+});
 const registerButtonSidebar = document.getElementById("registerButtonSidebar");
 registerButtonSidebar.addEventListener("click", () => {
   window.location.href = "./register.html";
@@ -73,8 +82,6 @@ function toastMessage(message) {
 }
 const inputFooter = document.getElementById("inputFooter");
 const buttonFooter = document.getElementById("buttonFooter");
-console.log(inputFooter);
-console.log(buttonFooter);
 buttonFooter.addEventListener("click", () => {
   const emailFooter = inputFooter.value;
   if (correctEmailStructure(emailFooter)) {
@@ -101,3 +108,6 @@ function toastMessage(message) {
     }, 300);
   }, 2000);
 }
+document.body.addEventListener("click", () => {
+  sidebar.classList.remove("visible");
+});

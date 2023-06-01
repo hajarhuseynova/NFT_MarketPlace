@@ -1081,7 +1081,6 @@ body {
   max-width: 1280px;
   height: 639px;
   margin: auto;
-  z-index: -1;
   .mushroom_container {
     display: none;
   }
@@ -1095,7 +1094,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
   }
   .mushroom {
     position: relative;
@@ -1145,7 +1143,12 @@ body {
           width: 198px;
           height: 60px;
           background: $white;
+          z-index: 90;
+          cursor: pointer;
           color: $secondary_filled;
+          >img{
+            
+          }
         }
       }
       .mushroom_right {

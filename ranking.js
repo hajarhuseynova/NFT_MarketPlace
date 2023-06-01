@@ -50,3 +50,10 @@ weekH.classList.add("label_text");
 monthH.classList.add("label_text");
 thirtyH.classList.add("label_text");
 allH.classList.add("label_text");
+
+document.body.addEventListener("click", () => {
+  sidebar.classList.remove("visible");
+});
+sidebar.addEventListener("click", (e) => {
+  e.stopPropagation();
+});

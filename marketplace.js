@@ -17,13 +17,13 @@ inputSearch.addEventListener("input", () => {
     }
   });
 });
-
 const heartWhite = document.querySelectorAll(".heartWhite");
 const heartRed = document.querySelectorAll(".heartRed");
 const collectionButton = document.getElementById("collectionButton");
 const favouriteButton = document.getElementById("favouriteButton");
 const main = document.getElementById("main");
 const fav = document.getElementById("fav");
+
 for (let i = 0; i < heartWhite.length; i++) {
   heartWhite[i].addEventListener("click", () => {
     heartWhite[i].style.display = "none";
@@ -34,15 +34,35 @@ for (let i = 0; i < heartWhite.length; i++) {
     heartRed[i].style.display = "none";
   });
 }
+const cardsArr = [...cardsContainer.children];
 collectionButton.addEventListener("click", () => {
   favouriteButton.classList.remove("borderChoice");
   collectionButton.classList.add("borderChoice");
   main.classList.remove("muted");
   fav.classList.add("muted");
+
+  for (let i = 0; i < cardsArr.length; i++) {
+    if ((heartWhite[i].style.display = "block")) {
+      cardsContainer.children[i].display = "flex";
+    } else {
+      cardsContainer.children[i].display = "none";
+    }
+  }
 });
 favouriteButton.addEventListener("click", () => {
   collectionButton.classList.remove("borderChoice");
   favouriteButton.classList.add("borderChoice");
   main.classList.add("muted");
   fav.classList.remove("muted");
+  for (let i = 0; i < cardsArr.length; i++) {
+    if ((heartRed[i].style.display = "block")) {
+      cardsArr[i].display = "flex";
+    }
+  }
+});
+document.body.addEventListener("click", () => {
+  sidebar.classList.remove("visible");
+});
+sidebar.addEventListener("click", (e) => {
+  e.stopPropagation();
 });

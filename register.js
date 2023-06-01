@@ -55,3 +55,10 @@ registerConfirmButton.addEventListener("click", () => {
     alert("Something wrong,please again.");
   }
 });
+
+document.body.addEventListener("click", () => {
+  sidebar.classList.remove("visible");
+});
+sidebar.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
