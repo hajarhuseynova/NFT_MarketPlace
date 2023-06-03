@@ -33,6 +33,7 @@
         border-radius: 20px;
         color: $white;
         z-index: 1;
+     
       }
       > img {
         position: absolute;
@@ -141,6 +142,7 @@
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
+
           line-height: 140%;
           color: #ffffff;
         }
@@ -202,6 +204,7 @@
       flex-grow: 0;
       &:hover {
         transform: scale(1);
+        box-shadow: 0 8px 6px -6px black;
       }
       .discover_top {
         position: relative;

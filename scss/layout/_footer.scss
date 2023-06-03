@@ -87,6 +87,18 @@ footer {
           line-height: 140%;
           color: $background;
         }
+        ::placeholder {
+          color: black;
+          opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+          color: black;
+        }
+
+        ::-ms-input-placeholder {
+          color: black;
+        }
         > button {
           padding: 0px 50px;
           width: 211px;

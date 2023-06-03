@@ -69,7 +69,7 @@ registerConfirmButton.addEventListener("click", () => {
     inputPassword.value = "";
     inputPasswordAgain.value = "";
   } else {
-    toastAlertMessage("OPS! Something wrong!");
+    toastAlertMessage("OPS! Something Wrong!");
   }
 });
 

@@ -48,6 +48,18 @@
         > input {
           margin-bottom: 3px;
         }
+        ::placeholder {
+          color: black;
+          opacity: 1;
+        }
+
+        :-ms-input-placeholder {
+          color: black;
+        }
+
+        ::-ms-input-placeholder {
+          color: black;
+        }
         > p {
           margin-bottom: 3px;
           @include BodyText;

@@ -34,3 +34,5 @@ collectionButton.addEventListener("click", () => {
 });
 owned.classList.add("label_text");
 collection.classList.add("label_text");
+
+
