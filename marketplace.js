@@ -48,7 +48,6 @@ for (let i = 0; i < heartWhite.length; i++) {
     favCount.textContent = count;
     likedCards.push(i + 1);
     localStorage.setItem("cards", JSON.stringify(likedCards));
-  
   });
   heartRed[i].addEventListener("click", () => {
     heartWhite[i].style.display = "block";
@@ -58,7 +57,6 @@ for (let i = 0; i < heartWhite.length; i++) {
     let index = likedCards.findIndex((id) => id === i + 1);
     likedCards.splice(index, 1);
     localStorage.setItem("cards", JSON.stringify(likedCards));
-   
   });
 }
 
@@ -69,6 +67,10 @@ collectionButton.addEventListener("click", () => {
   fav.classList.add("muted");
   for (let i = 0; i < cards.length; i++) {
     cards[i].style.display = "block";
+    const heart = cards[i].querySelector(".heartRed");
+    heart.addEventListener("click", () => {
+      cards[i].style.display = "block";
+    });
   }
 });
 favouriteButton.addEventListener("click", () => {
@@ -79,6 +81,7 @@ favouriteButton.addEventListener("click", () => {
   for (let i = 0; i < heartWhite.length; i++) {
     if (heartRed[i].style.display == "block") {
       cards[i].style.display = "block";
+
       const heart = cards[i].querySelector(".heartRed");
       heart.addEventListener("click", () => {
         cards[i].style.display = "none";

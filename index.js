@@ -6,11 +6,13 @@ const registerPageImage = document.getElementById("registerPageImage");
 const emailInput = document.querySelector(".inputs>input");
 const toastContainerIndex = document.querySelector(".toastContainer");
 const buttonToast = document.querySelector(".inputs>button");
+
 const emailRegexIndex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 registerPageImage.addEventListener("click", () => {
   window.location.href = "./register.html";
 });
+
 creatorCard.forEach((element) => {
   element.addEventListener("click", () => {
     window.location.href = "./artist.html";
@@ -42,7 +44,10 @@ function correctEmailStructure(email) {
 function toastConfirmMessage(Confirmmessage) {
   const toast = document.createElement("div");
   toast.classList.add("success");
-  toast.innerText = Confirmmessage;
+  toast.innerHTML = `
+  <img src="./assests/icons/toast_icons/confirm.svg" class="confirm_image">
+  ${Confirmmessage}
+  `;
   toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;
@@ -57,7 +62,10 @@ function toastConfirmMessage(Confirmmessage) {
 function toastAlertMessage(Alertmessage) {
   const toast = document.createElement("div");
   toast.classList.add("alert");
-  toast.innerText = Alertmessage;
+  toast.innerHTML = `
+  <img src="./assests/icons/toast_icons/alert.svg" class="alert_image">
+  ${Alertmessage}
+  `;
   toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;

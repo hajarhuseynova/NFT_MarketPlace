@@ -325,7 +325,7 @@ input:focus {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -872,21 +872,33 @@ footer .footer_container .footer_right .inputs > button:hover {
           align-items: center;
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes change-direction {
   0% {
-    left: 0;
+    -webkit-transform: perspective(800px) rotateY(-25deg);
+            transform: perspective(800px) rotateY(-25deg);
+  }
+  50% {
+    -webkit-transform: perspective(800px) rotateY(25deg);
+            transform: perspective(800px) rotateY(25deg);
   }
   100% {
-    left: 100px;
+    -webkit-transform: perspective(800px) rotateY(-25deg);
+            transform: perspective(800px) rotateY(-25deg);
   }
 }
 
-@keyframes move {
+@keyframes change-direction {
   0% {
-    left: 0;
+    -webkit-transform: perspective(800px) rotateY(-25deg);
+            transform: perspective(800px) rotateY(-25deg);
+  }
+  50% {
+    -webkit-transform: perspective(800px) rotateY(25deg);
+            transform: perspective(800px) rotateY(25deg);
   }
   100% {
-    left: 100px;
+    -webkit-transform: perspective(800px) rotateY(-25deg);
+            transform: perspective(800px) rotateY(-25deg);
   }
 }
 .info {
@@ -974,9 +986,8 @@ footer .footer_container .footer_right .inputs > button:hover {
   border-radius: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  position: relative;
-  -webkit-animation: move 2s infinite alternate;
-          animation: move 2s infinite alternate;
+  -webkit-animation: change-direction 9s infinite;
+          animation: change-direction 9s infinite;
 }
 .info .info_container .info_right > img {
   width: 510px;
@@ -2979,6 +2990,12 @@ body {
 }
 .toastContainer .success {
   background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   padding: 20px;
   border-radius: 4px;
@@ -2990,12 +3007,27 @@ body {
 .toastContainer .alert {
   background-color: red;
   color: #fff;
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 15px;
   border-radius: 4px;
   margin-bottom: 8px;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
+}
+.toastContainer .confirm_image {
+  width: 20px;
+  margin-right: 10px;
+}
+.toastContainer .alert_image {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 1050px) {

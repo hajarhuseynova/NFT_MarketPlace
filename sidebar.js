@@ -6,7 +6,11 @@ const navbarLeft = document.querySelector(".navbar_left");
 const registerButtonSidebar = document.getElementById("registerButtonSidebar");
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const registerButton = document.getElementById("registerButton");
+const sidebarRegisterButton = document.querySelector(".lastimage");
 registerButton.addEventListener("click", () => {
+  window.location.href = "./register.html";
+});
+sidebarRegisterButton.addEventListener("click", () => {
   window.location.href = "./register.html";
 });
 document.body.addEventListener("click", () => {

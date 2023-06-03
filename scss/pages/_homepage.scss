@@ -7,14 +7,19 @@
   flex-direction: column;
   align-items: center;
 }
-@keyframes move {
+
+@keyframes change-direction {
   0% {
-    left: 0;
+    transform: perspective(800px) rotateY(-25deg);
+  }
+  50% {
+    transform: perspective(800px) rotateY(25deg);
   }
   100% {
-    left: 100px;
+    transform: perspective(800px) rotateY(-25deg);
   }
 }
+
 .info {
   width: 100%;
   background-color: $background;
@@ -58,8 +63,7 @@
       background: $background-secondary;
       border-radius: 20px;
       transition: 0.5s;
-      position: relative;
-      animation: move 2s infinite alternate;
+      animation: change-direction 9s infinite;
 
       > img {
         width: 510px;
@@ -1538,6 +1542,8 @@ body {
   z-index: 9999;
   .success {
     background-color: green;
+    display: flex;
+    align-items: center;
     color: #fff;
     padding: 20px;
     border-radius: 4px;
@@ -1548,11 +1554,22 @@ body {
   .alert {
     background-color: red;
     color: #fff;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
     border-radius: 4px;
     margin-bottom: 8px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+  }
+  .confirm_image {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .alert_image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
   }
 }
 @media screen and (max-width: 1050px) {

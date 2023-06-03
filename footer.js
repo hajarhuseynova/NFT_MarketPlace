@@ -13,10 +13,15 @@ buttonFooter.addEventListener("click", () => {
 function correctEmailStructure(emailFooter) {
   return emailRegex.test(emailFooter);
 }
+
 function toastConfirmMessage(Confirmmessage) {
   const toast = document.createElement("div");
   toast.classList.add("success");
-  toast.innerText = Confirmmessage;
+  toast.innerHTML = `
+  <img src="./assests/icons/toast_icons/confirm.svg" class="confirm_image">
+  ${Confirmmessage}
+  `;
+
   toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;
@@ -28,10 +33,14 @@ function toastConfirmMessage(Confirmmessage) {
     }, 300);
   }, 2000);
 }
+
 function toastAlertMessage(Alertmessage) {
   const toast = document.createElement("div");
   toast.classList.add("alert");
-  toast.innerText = Alertmessage;
+  toast.innerHTML = `
+  <img src="./assests/icons/toast_icons/alert.svg" class="alert_image">
+  ${Alertmessage}
+  `;
   toastContainer.appendChild(toast);
   setTimeout(function () {
     toast.style.opacity = 1;
