@@ -203,6 +203,7 @@
         }
         > p {
           @include BodyText;
+          text-transform: none;
           font-size: 16px;
           line-height: 140%;
         }
@@ -294,6 +295,7 @@
         }
         > p {
           @include BodyText;
+          text-transform: none;
           font-size: 16px;
           line-height: 140%;
         }
