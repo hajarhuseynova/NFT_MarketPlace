@@ -121,11 +121,11 @@ let lowToHigh3 = false;
 let lowToHigh4 = false;
 let lowToHigh5 = false;
 first_th.addEventListener("click", () => {
-  data.sort((a, b) => a["#"] - b["#"]);
+  data.reverse();
   if (!lowToHigh1) {
     lowToHigh1 = true;
   } else {
-    data.reverse();
+    data.sort((a, b) => a["#"] - b["#"]);
     lowToHigh1 = false;
   }
   renderTable();

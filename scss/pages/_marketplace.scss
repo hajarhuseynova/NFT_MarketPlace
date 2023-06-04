@@ -33,7 +33,6 @@
         border-radius: 20px;
         color: $white;
         z-index: 1;
-     
       }
       > img {
         position: absolute;
@@ -166,7 +165,6 @@
       display: flex;
       justify-content: center;
       .common {
-        width: 340px;
         > h5 {
           font-size: 16px;
         }
@@ -177,9 +175,7 @@
 @media screen and (max-width: 690px) {
   .choice {
     .choice_container {
-      width: 375px;
       .common {
-        width: 157.5px;
         .circle {
           display: none;
         }

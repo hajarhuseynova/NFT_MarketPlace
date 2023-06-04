@@ -5,6 +5,7 @@ const toastContainer = document.querySelector(".toastContainer");
 buttonFooter.addEventListener("click", () => {
   const emailFooter = inputFooter.value;
   if (correctEmailStructure(emailFooter)) {
+    inputFooter.value = "";
     toastConfirmMessage("Huhuu,Correct!");
   } else {
     toastAlertMessage("OPS!  Invalid Email!");

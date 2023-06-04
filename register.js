@@ -63,13 +63,13 @@ registerConfirmButton.addEventListener("click", () => {
     inputPassword.value == inputPasswordAgain.value &&
     inputPasswordAgain.value.length >= 8
   ) {
-    toastConfirmMessage("Huhuu,Successfully Created!");
+    toastConfirmMessage("Successfully Created!");
     inputEmail.value = "";
     inputUsername.value = "";
     inputPassword.value = "";
     inputPasswordAgain.value = "";
   } else {
-    toastAlertMessage("OPS! Something Wrong!");
+    toastAlertMessage("OPS! Wrong!");
   }
 });
 

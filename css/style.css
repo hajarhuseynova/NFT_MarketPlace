@@ -2703,7 +2703,9 @@ body {
     font-family: "Space Mono";
   }
   .mushroom .mushroom_container .mushroom_right .hidden {
-    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .mushroom .mushroom_container .mushroom_right > button {
     margin-top: 30px;
@@ -4379,20 +4381,11 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .choice .choice_container .common {
-    width: 340px;
-  }
   .choice .choice_container .common > h5 {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 690px) {
-  .choice .choice_container {
-    width: 375px;
-  }
-  .choice .choice_container .common {
-    width: 157.5px;
-  }
   .choice .choice_container .common .circle {
     display: none;
   }
@@ -4857,8 +4850,8 @@ body {
   transition: 0.5s;
 }
 .cards .cards_container table tbody tr:hover {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 .cards .cards_container table tbody tr td {
   text-align: start;

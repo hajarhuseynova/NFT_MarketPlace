@@ -6,7 +6,8 @@ const registerPageImage = document.getElementById("registerPageImage");
 const emailInput = document.querySelector(".inputs>input");
 const toastContainerIndex = document.querySelector(".toastContainer");
 const buttonToast = document.querySelector(".inputs>button");
-
+const mobileRankingButton = document.querySelector(".mobile_button > button");
+const seeAllMobileButton = document.getElementById("seeAllMobileButton");
 const emailRegexIndex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 registerPageImage.addEventListener("click", () => {
@@ -26,13 +27,20 @@ creatorCardMedia.forEach((element) => {
 rankingButton.addEventListener("click", () => {
   window.location.href = "./rankings.html";
 });
+mobileRankingButton.addEventListener("click", () => {
+  window.location.href = "./rankings.html";
+});
 seeAllButton.addEventListener("click", () => {
+  window.location.href = "./marketplace.html";
+});
+seeAllMobileButton.addEventListener("click", () => {
   window.location.href = "./marketplace.html";
 });
 
 buttonToast.addEventListener("click", () => {
   const email = emailInput.value;
   if (correctEmailStructure(email)) {
+    emailInput.value = "";
     toastConfirmMessage("Huhuu,Correct!");
   } else {
     toastAlertMessage("OPS!  Invalid Email!");
