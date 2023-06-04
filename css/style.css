@@ -2361,7 +2361,7 @@ body {
   }
 }
 .mushroom {
-  background-image: url("../../assests/images/mushroom.png");
+  background-image: url("../assests/images/mushroom.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4723,6 +4723,7 @@ body {
   text-align: center;
   background-color: transparent;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .choice .choice_container .word:hover {
   -webkit-transform: scale(1);
