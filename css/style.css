@@ -1155,6 +1155,8 @@ body {
     height: 315px;
     background: #3b3b3b;
     border-radius: 20px;
+    -webkit-animation: change-direction 9s infinite;
+            animation: change-direction 9s infinite;
   }
   .info .info_container .info_mobile_media .info_picture > img {
     width: 315px;

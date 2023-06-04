@@ -199,6 +199,7 @@ body {
           height: 315px;
           background: $background-secondary;
           border-radius: 20px;
+          animation: change-direction 9s infinite;
           > img {
             width: 315px;
             height: 206px;
